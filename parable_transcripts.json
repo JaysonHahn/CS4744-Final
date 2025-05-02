@@ -1,0 +1,2517 @@
+[
+    {
+        "root_id": "aiden-a-1",
+        "transcript_ids": [
+            "aiden-a-1-1"
+        ],
+        "formulas": [
+            "exists n.(exists c.(vowel(c) & char(n,c)) & exists c.(capital(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "aiden-a-10",
+        "transcript_ids": [
+            "aiden-a-10-4"
+        ],
+        "formulas": [
+            "exists n.(char(n,lett) & exists c.char(n,c) & all m.((char(m,lett) & exists c.char(m,c)) -> eq(m,n)))"
+        ]
+    },
+    {
+        "root_id": "aiden-a-2",
+        "transcript_ids": [
+            "aiden-a-2-2",
+            "aiden-a-2-4",
+            "aiden-a-2-6",
+            "aiden-a-2-11"
+        ],
+        "formulas": [
+            "exists n.(exists c.(vowel(c) & char(n,c)) & -exists c.(capital(c) & char(n,c)))",
+            "exists n.(exists c.(vowel(c) & char(n,c)) & -exists c.(capital(c) & char(n,c)))",
+            "exists n.(exists c.(vowel(c) & char(n,c)) & -capital(c2))",
+            "exists n.(exists c.(vowel(c) & char(n,c)) & -capital(c2))"
+        ]
+    },
+    {
+        "root_id": "aiden-a-3",
+        "transcript_ids": [
+            "aiden-a-3-3"
+        ],
+        "formulas": [
+            "all n.(exists c.(glide(c) & char(n,c)) -> exists h.all z1610.(exists c.(vowel(c) & char(z1610,c)) -> (le(n,z1610) & (-(h = z1610) -> -le(n,z1610)))))"
+        ]
+    },
+    {
+        "root_id": "aiden-a-4",
+        "transcript_ids": [
+            "aiden-a-4-241",
+            "aiden-a-4-288",
+            "aiden-a-4-309",
+            "aiden-a-4-444",
+            "aiden-a-4-491",
+            "aiden-a-4-513"
+        ],
+        "formulas": [
+            "exists h.all n.((exists c.char(n,c) & le(n,5)) -> (exists c.(vowel(c) & char(n,c)) & (-(h = n) -> -exists c.(vowel(c) & char(n,c)))))",
+            "exists h.all n.((exists c.char(n,c) & exists h.all z1887.(5(z1887) -> (le(n,z1887) & (-(h = z1887) -> -le(n,z1887))))) -> (exists c.(vowel(c) & char(n,c)) & (-(h = n) -> -exists c.(vowel(c) & char(n,c)))))",
+            "exists h.all n.((exists c.char(n,c) & exists z1912.(5(z1912) & le(n,z1912))) -> (exists c.(vowel(c) & char(n,c)) & (-(h = n) -> -exists c.(vowel(c) & char(n,c)))))",
+            "exists h.all n.((exists c.char(n,c) & le(n,5)) -> (exists h.all z2078.(exists c.(vowel(c) & char(z2078,c)) -> (n(z2078) & (-(h = z2078) -> -n(z2078)))) & (-(h = n) -> -exists h.all z2079.(exists c.(vowel(c) & char(z2079,c)) -> (n(z2079) & (-(h = z2079) -> -n(z2079)))))))",
+            "exists h.all n.((exists c.char(n,c) & exists h.all z2225.(5(z2225) -> (le(n,z2225) & (-(h = z2225) -> -le(n,z2225))))) -> (exists h.all z2226.(exists c.(vowel(c) & char(z2226,c)) -> (n(z2226) & (-(h = z2226) -> -n(z2226)))) & (-(h = n) -> -exists h.all z2227.(exists c.(vowel(c) & char(z2227,c)) -> (n(z2227) & (-(h = z2227) -> -n(z2227)))))))",
+            "exists h.all n.((exists c.char(n,c) & exists z2273.(5(z2273) & le(n,z2273))) -> (exists h.all z2274.(exists c.(vowel(c) & char(z2274,c)) -> (n(z2274) & (-(h = z2274) -> -n(z2274)))) & (-(h = n) -> -exists h.all z2275.(exists c.(vowel(c) & char(z2275,c)) -> (n(z2275) & (-(h = z2275) -> -n(z2275)))))))"
+        ]
+    },
+    {
+        "root_id": "aiden-a-5",
+        "transcript_ids": [
+            "aiden-a-5-1",
+            "aiden-a-5-2",
+            "aiden-a-5-3"
+        ],
+        "formulas": [
+            "all c m.((char(m,c) & char(3,c)) -> (m = 3))",
+            "exists h.all n.(3(n) -> (all c m.((char(m,c) & char(n,c)) -> (m = n)) & (-(h = n) -> -all c m.((char(m,c) & char(n,c)) -> (m = n)))))",
+            "exists n.(3(n) & all c m.((char(m,c) & char(n,c)) -> (m = n)))"
+        ]
+    },
+    {
+        "root_id": "aiden-a-6",
+        "transcript_ids": [
+            "aiden-a-6-1",
+            "aiden-a-6-3"
+        ],
+        "formulas": [
+            "exists h.all n.((exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)) & exists c.char(n,c)) -> (-exists c.(vowel(c) & char(n,c)) & (-(h = n) -> --exists c.(vowel(c) & char(n,c)))))",
+            "exists h.all n.((exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)) & exists c.char(n,c)) -> (-exists h.all z2935.(exists c.(vowel(c) & char(z2935,c)) -> (n(z2935) & (-(h = z2935) -> -n(z2935)))) & (-(h = n) -> --exists h.all z2936.(exists c.(vowel(c) & char(z2936,c)) -> (n(z2936) & (-(h = z2936) -> -n(z2936)))))))"
+        ]
+    },
+    {
+        "root_id": "aiden-a-7",
+        "transcript_ids": [
+            "aiden-a-7-1"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> -all c m.((char(m,c) & char(n,c)) -> (m = n)))"
+        ]
+    },
+    {
+        "root_id": "aiden-a-8",
+        "transcript_ids": [
+            "aiden-a-8-4",
+            "aiden-a-8-5"
+        ],
+        "formulas": [
+            "exists n.(exists c.(glide(c) & char(n,c)) & exists c.char(n,c))",
+            "exists n.(-exists c.(glide(c) & char(n,c)) & exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "aiden-a-9",
+        "transcript_ids": [
+            "aiden-a-9-7"
+        ],
+        "formulas": [
+            "all n.(-2(n) -> -all c m.((char(m,c) & char(n,c)) -> (m = n)))"
+        ]
+    },
+    {
+        "root_id": "aiden-b-3",
+        "transcript_ids": [
+            "aiden-b-3-9"
+        ],
+        "formulas": [
+            "((-exists c.(char(4,c) & char(5,c)) & exists n.(char(n,lete) & exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)))) | (exists c.(char(4,c) & char(5,c)) & -exists n.(char(n,lete) & exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)))))"
+        ]
+    },
+    {
+        "root_id": "aiden-b-4",
+        "transcript_ids": [
+            "aiden-b-4-36",
+            "aiden-b-4-55",
+            "aiden-b-4-112"
+        ],
+        "formulas": [
+            "all n.((exists c.char(n,c) & exists c.(capital(c) & char(n,c))) -> exists z3990.(-exists c.(glide(c) & char(z3990,c)) & le(z3990,n)))",
+            "all n.((exists c.char(n,c) & exists c.(capital(c) & char(n,c))) -> exists z4015.(exists c.(char(z4015,c) & odd(z4015)) & exists c.(glide(c) & char(z4015,c)) & le(z4015,n)))",
+            "all n.((exists c.char(n,c) & exists c.(capital(c) & char(n,c))) -> exists z4074.(exists c.(glide(c) & char(z4074,c)) & le(z4074,n)))"
+        ]
+    },
+    {
+        "root_id": "arya-a-1",
+        "transcript_ids": [
+            "arya-a-1-1"
+        ],
+        "formulas": [
+            "exists n.(all c m.((char(m,c) & char(n,c)) -> (m = n)) & exists c.char(n,c) & exists c.(capital(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "arya-a-10",
+        "transcript_ids": [
+            "arya-a-10-3"
+        ],
+        "formulas": [
+            "all n.((exists c.(char(n,c) & mirrored(n)) & exists c.char(n,c)) -> -exists c.(capital(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "arya-a-2",
+        "transcript_ids": [
+            "arya-a-2-6"
+        ],
+        "formulas": [
+            "exists n.(exists c.(vowel(c) & char(n,c)) & exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "arya-a-3",
+        "transcript_ids": [
+            "arya-a-3-2"
+        ],
+        "formulas": [
+            "exists m n.(char(n,letp) & exists c.(char(n,c) & mirrored(n)) & char(m,letp) & exists c.(char(m,c) & mirrored(m)) & -(m = n))"
+        ]
+    },
+    {
+        "root_id": "arya-a-4",
+        "transcript_ids": [
+            "arya-a-4-1",
+            "arya-a-4-3"
+        ],
+        "formulas": [
+            "all n.((exists c.(char(n,c) & even(n)) & exists c.char(n,c)) -> exists c.(vowel(c) & char(n,c)))",
+            "all n.((exists c.(char(n,c) & even(n)) & exists c.char(n,c)) -> exists h.all z16269.(exists c.(vowel(c) & char(z16269,c)) -> (n(z16269) & (-(h = z16269) -> -n(z16269)))))"
+        ]
+    },
+    {
+        "root_id": "arya-a-5",
+        "transcript_ids": [
+            "arya-a-5-6"
+        ],
+        "formulas": [
+            "exists n.(all c z16276.((char(z16276,c) & char(n,c)) -> (z16276 = n)) & exists c.(-vowel(c) & char(n,c)) & le(n,3))"
+        ]
+    },
+    {
+        "root_id": "arya-a-6",
+        "transcript_ids": [
+            "arya-a-6-35",
+            "arya-a-6-38"
+        ],
+        "formulas": [
+            "all n.(-2(n) -> -exists z16425.(exists c.(vowel(c) & char(z16425,c)) & le(n,z16425)))",
+            "all n.(-2(n) -> -exists h.all z16435.(exists c.(vowel(c) & char(z16435,c)) -> (le(n,z16435) & (-(h = z16435) -> -le(n,z16435)))))"
+        ]
+    },
+    {
+        "root_id": "arya-a-8",
+        "transcript_ids": [
+            "arya-a-8-2"
+        ],
+        "formulas": [
+            "exists n.(exists c.(glide(c) & char(n,c)) & le(2,n) & exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "arya-a-9",
+        "transcript_ids": [
+            "arya-a-9-1"
+        ],
+        "formulas": [
+            "all n.((all c m.((char(m,c) & char(n,c)) -> (m = n)) & exists c.(vowel(c) & char(n,c))) -> -exists c.(cent(n) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "arya-b-1",
+        "transcript_ids": [
+            "arya-b-1-2",
+            "arya-b-1-8"
+        ],
+        "formulas": [
+            "all n.((exists c.(char(n,c) & even(n)) & exists c.char(n,c)) -> (exists c.(glide(c) & char(n,c)) | exists c.(capital(c) & char(n,c))))",
+            "all n.((exists c.(char(n,c) & even(n)) & exists c.char(n,c)) -> (exists h.all z16507.(exists c.(glide(c) & char(z16507,c)) -> (n(z16507) & (-(h = z16507) -> -n(z16507)))) | exists c.(capital(c) & char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "arya-b-2",
+        "transcript_ids": [
+            "arya-b-2-383"
+        ],
+        "formulas": [
+            "-all n.((exists c.-voiced(n,c) & exists c.(glide(c) & char(n,c))) -> ad(n,2))"
+        ]
+    },
+    {
+        "root_id": "arya-b-3",
+        "transcript_ids": [
+            "arya-b-3-75",
+            "arya-b-3-94"
+        ],
+        "formulas": [
+            "all n.((exists c.(vowel(c) & char(n,c)) & exists c.char(n,c) & le(n,2)) -> char(n,letu))",
+            "all n.((exists c.(vowel(c) & char(n,c)) & exists c.char(n,c) & le(n,2)) -> exists h.all z17483.(char(z17483,letu) -> (n(z17483) & (-(h = z17483) -> -n(z17483)))))"
+        ]
+    },
+    {
+        "root_id": "arya-b-5",
+        "transcript_ids": [
+            "arya-b-5-18",
+            "arya-b-5-46",
+            "arya-b-5-59"
+        ],
+        "formulas": [
+            "all n.(-4(n) -> -(char(n,leti) & exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m))))",
+            "all n.(-4(n) -> -(-char(n,leti) & exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m))))",
+            "all n.(-4(n) -> -(all z17528.(char(z17528,leti) -> n(z17528)) & exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m))))"
+        ]
+    },
+    {
+        "root_id": "arya-c-3",
+        "transcript_ids": [
+            "arya-c-3-1",
+            "arya-c-3-3",
+            "arya-c-3-5",
+            "arya-c-3-10"
+        ],
+        "formulas": [
+            "exists n.(exists c.(cent(n) & char(n,c)) & exists c.(vowel(c) & char(n,c)) & ad(4,n) & exists z19586.(exists c.char(z19586,c) & exists h.all z19584.((capital(c3) & exists c.(vowel(c) & char(z19584,c))) -> (le(z19584,z19586) & (-(h = z19584) -> -le(z19584,z19586)))) & le(z19586,n)))",
+            "exists n.(exists c.(cent(n) & char(n,c)) & exists c.(vowel(c) & char(n,c)) & ad(4,n) & exists h.all z19626.((exists c.char(z19626,c) & exists h.all z19624.((capital(c3) & exists c.(vowel(c) & char(z19624,c))) -> (le(z19624,z19626) & (-(h = z19624) -> -le(z19624,z19626))))) -> (le(z19626,n) & (-(h = z19626) -> -le(z19626,n)))))",
+            "exists n.(exists c.(cent(n) & char(n,c)) & exists c.(vowel(c) & char(n,c)) & ad(4,n) & exists z19666.(exists c.char(z19666,c) & exists z19664.(capital(c3) & exists c.(vowel(c) & char(z19664,c)) & le(z19664,z19666)) & le(z19666,n)))",
+            "exists n.(exists c.(cent(n) & char(n,c)) & exists c.(vowel(c) & char(n,c)) & ad(4,n) & exists h.all z19732.((exists c.char(z19732,c) & exists z19730.(capital(c3) & exists c.(vowel(c) & char(z19730,c)) & le(z19730,z19732))) -> (le(z19732,n) & (-(h = z19732) -> -le(z19732,n)))))"
+        ]
+    },
+    {
+        "root_id": "arya-c-5",
+        "transcript_ids": [
+            "arya-c-5-1",
+            "arya-c-5-7"
+        ],
+        "formulas": [
+            "((-all n.(char(n,letp) -> exists c.(-vowel(c) & char(n,c))) & exists n.(exists c.(glide(c) & char(n,c)) & exists c.(char(n,c) & odd(n)) & -exists c.voiced(n,c) & exists c.char(n,c))) | (all n.(char(n,letp) -> exists c.(-vowel(c) & char(n,c))) & -exists n.(exists c.(glide(c) & char(n,c)) & exists c.(char(n,c) & odd(n)) & -exists c.voiced(n,c) & exists c.char(n,c))))",
+            "((-all n.(char(n,letp) -> exists h.all z25848.(exists c.(-vowel(c) & char(z25848,c)) -> (n(z25848) & (-(h = z25848) -> -n(z25848))))) & exists n.(exists c.(glide(c) & char(n,c)) & exists c.(char(n,c) & odd(n)) & -exists c.voiced(n,c) & exists c.char(n,c))) | (all n.(char(n,letp) -> exists h.all z25848.(exists c.(-vowel(c) & char(z25848,c)) -> (n(z25848) & (-(h = z25848) -> -n(z25848))))) & -exists n.(exists c.(glide(c) & char(n,c)) & exists c.(char(n,c) & odd(n)) & -exists c.voiced(n,c) & exists c.char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "asher-a-1",
+        "transcript_ids": [
+            "asher-a-1-2"
+        ],
+        "formulas": [
+            "exists n.(exists c.char(n,c) & le(\\n.exists c.(glide(c) & char(n,c)),n))"
+        ]
+    },
+    {
+        "root_id": "asher-a-10",
+        "transcript_ids": [
+            "asher-a-10-1"
+        ],
+        "formulas": [
+            "exists m n.(exists c.(vowel(c) & char(n,c)) & exists c.char(n,c) & exists c.(vowel(c) & char(m,c)) & exists c.char(m,c) & -(m = n))"
+        ]
+    },
+    {
+        "root_id": "asher-a-2",
+        "transcript_ids": [
+            "asher-a-2-422",
+            "asher-a-2-450"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> (exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)) & -exists c.(-vowel(c) & char(n,c))))",
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> (exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)) & exists c.(-vowel(c) & char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "asher-a-3",
+        "transcript_ids": [
+            "asher-a-3-1"
+        ],
+        "formulas": [
+            "all n.(exists c.(vowel(c) & char(n,c)) -> (all c m.((char(m,c) & char(n,c)) -> (m = n)) & -exists c d.(le(n,d) & char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "asher-a-4",
+        "transcript_ids": [
+            "asher-a-4-1",
+            "asher-a-4-3"
+        ],
+        "formulas": [
+            "all c m.((char(m,c) & char(1,c)) -> (m = 1))",
+            "exists h.all n.(1(n) -> (all c m.((char(m,c) & char(n,c)) -> (m = n)) & (-(h = n) -> -all c m.((char(m,c) & char(n,c)) -> (m = n)))))"
+        ]
+    },
+    {
+        "root_id": "asher-a-7",
+        "transcript_ids": [
+            "asher-a-7-1"
+        ],
+        "formulas": [
+            "exists m n.(exists c.(vowel(c) & char(n,c)) & capital(c3) & exists c.(vowel(c) & char(m,c)) & capital(c3) & -(m = n))"
+        ]
+    },
+    {
+        "root_id": "asher-a-8",
+        "transcript_ids": [
+            "asher-a-8-3"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> -(exists c.(ad(\\z25913.exists c.(vowel(c) & char(z25913,c)),n) & char(\\z25914.exists c.(vowel(c) & char(z25914,c)),c)) & le(\\z25915.exists c.(vowel(c) & char(z25915,c)),n)))"
+        ]
+    },
+    {
+        "root_id": "asher-b-1",
+        "transcript_ids": [
+            "asher-b-1-19",
+            "asher-b-1-27"
+        ],
+        "formulas": [
+            "-all n.(char(n,letp) -> ad(n,3))",
+            "-all n.(char(n,letp) -> exists h.all z25944.(3(z25944) -> (ad(n,z25944) & (-(h = z25944) -> -ad(n,z25944)))))"
+        ]
+    },
+    {
+        "root_id": "ava-a-1",
+        "transcript_ids": [
+            "ava-a-1-5",
+            "ava-a-1-9"
+        ],
+        "formulas": [
+            "exists n.(char(n,letu) & exists c.(vowel(c) & char(n,c)))",
+            "exists n.(char(n,letu) & exists h.all z26404.(exists c.(vowel(c) & char(z26404,c)) -> (n(z26404) & (-(h = z26404) -> -n(z26404)))))"
+        ]
+    },
+    {
+        "root_id": "ava-a-10",
+        "transcript_ids": [
+            "ava-a-10-1",
+            "ava-a-10-3",
+            "ava-a-10-10",
+            "ava-a-10-13"
+        ],
+        "formulas": [
+            "exists n.(exists c.(vowel(c) & char(n,c)) & (exists h.all z26406.(char(z26406,letu) -> (n(z26406) & (-(h = z26406) -> -n(z26406)))) | -exists c d.(le(n,d) & char(n,c))) & exists c.char(n,c))",
+            "exists n.(exists c.(vowel(c) & char(n,c)) & (char(n,letu) | -exists c d.(le(n,d) & char(n,c))) & exists c.char(n,c))",
+            "exists n.(exists c.(vowel(c) & char(n,c)) & exists h.all z26424.(char(z26424,letu) -> (n(z26424) & (-(h = z26424) -> -n(z26424)))) & -exists c d.(le(n,d) & char(n,c)) & exists c.char(n,c))",
+            "exists n.(exists c.(vowel(c) & char(n,c)) & char(n,letu) & -exists c d.(le(n,d) & char(n,c)) & exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "ava-a-3",
+        "transcript_ids": [
+            "ava-a-3-1",
+            "ava-a-3-3",
+            "ava-a-3-42"
+        ],
+        "formulas": [
+            "all n.(exists c.char(n,c) -> (exists c.(vowel(c) & char(n,c)) | all c m.((char(m,c) & char(n,c)) -> (m = n))))",
+            "all n.(exists c.char(n,c) -> (exists h.all z26448.(exists c.(vowel(c) & char(z26448,c)) -> (n(z26448) & (-(h = z26448) -> -n(z26448)))) | all c m.((char(m,c) & char(n,c)) -> (m = n))))",
+            "(all z26467.(exists c.char(z26467,c) -> all c m.((char(m,c) & char(z26467,c)) -> (m = z26467))) & exists h.all z26468.(exists c.(vowel(c) & char(z26468,c)) -> (all c m.((char(m,c) & char(z26468,c)) -> (m = z26468)) & (-(h = z26468) -> -all c m.((char(m,c) & char(z26468,c)) -> (m = z26468))))))"
+        ]
+    },
+    {
+        "root_id": "ava-a-4",
+        "transcript_ids": [
+            "ava-a-4-2",
+            "ava-a-4-4"
+        ],
+        "formulas": [
+            "all n.(char(n,letu) -> exists c.(vowel(c) & char(n,c)))",
+            "all n.(char(n,letu) -> exists h.all z26471.(exists c.(vowel(c) & char(z26471,c)) -> (n(z26471) & (-(h = z26471) -> -n(z26471)))))"
+        ]
+    },
+    {
+        "root_id": "ava-a-6",
+        "transcript_ids": [
+            "ava-a-6-7",
+            "ava-a-6-14"
+        ],
+        "formulas": [
+            "exists m n.(exists c.char(n,c) & exists h.all z26474.(char(z26474,letp) -> (le(n,z26474) & (-(h = z26474) -> -le(n,z26474)))) & exists c.char(m,c) & exists h.all n.(char(n,letp) -> (le(m,n) & (-(h = n) -> -le(m,n)))) & -(m = n))",
+            "exists m n.(exists c.char(n,c) & exists z26484.(char(z26484,letp) & le(n,z26484)) & exists c.char(m,c) & exists n.(char(n,letp) & le(m,n)) & -(m = n))"
+        ]
+    },
+    {
+        "root_id": "ava-a-7",
+        "transcript_ids": [
+            "ava-a-7-2",
+            "ava-a-7-4"
+        ],
+        "formulas": [
+            "exists m n.(exists c.(vowel(c) & char(n,c)) & exists z26494.(exists c.(-vowel(c) & char(z26494,c)) & le(z26494,n)) & exists c.(vowel(c) & char(m,c)) & exists n.(exists c.(-vowel(c) & char(n,c)) & le(n,m)) & -(m = n))",
+            "exists m n.(exists c.(vowel(c) & char(n,c)) & exists h.all z26498.(exists c.(-vowel(c) & char(z26498,c)) -> (le(z26498,n) & (-(h = z26498) -> -le(z26498,n)))) & exists c.(vowel(c) & char(m,c)) & exists h.all n.(exists c.(-vowel(c) & char(n,c)) -> (le(n,m) & (-(h = n) -> -le(n,m)))) & -(m = n))"
+        ]
+    },
+    {
+        "root_id": "ava-a-8",
+        "transcript_ids": [
+            "ava-a-8-1"
+        ],
+        "formulas": [
+            "exists n.(exists c.(vowel(c) & char(n,c)) & exists c.(capital(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "ava-a-9",
+        "transcript_ids": [
+            "ava-a-9-1"
+        ],
+        "formulas": [
+            "exists n.(exists c.(vowel(c) & char(n,c)) & exists c.(capital(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "ava-b-1",
+        "transcript_ids": [
+            "ava-b-1-3",
+            "ava-b-1-4",
+            "ava-b-1-21",
+            "ava-b-1-25",
+            "ava-b-1-27",
+            "ava-b-1-38"
+        ],
+        "formulas": [
+            "all n.(char(n,letp) -> exists z26530.(exists c.(glide(c) & char(z26530,c)) & all c z26529.((char(z26529,c) & char(z26530,c)) -> (z26529 = z26530)) & le(z26530,n)))",
+            "all n.(char(n,letp) -> exists h.all z26546.((exists c.(glide(c) & char(z26546,c)) & all c z26545.((char(z26545,c) & char(z26546,c)) -> (z26545 = z26546))) -> (le(z26546,n) & (-(h = z26546) -> -le(z26546,n)))))",
+            "all n.(char(n,letp) -> (exists c.(ad(\\z26600.(exists c.(glide(c) & char(z26600,c)) & all c m.((char(m,c) & char(z26600,c)) -> (m = z26600))),n) & char(\\z26601.(exists c.(glide(c) & char(z26601,c)) & all c m.((char(m,c) & char(z26601,c)) -> (m = z26601))),c)) & le(\\z26602.(exists c.(glide(c) & char(z26602,c)) & all c m.((char(m,c) & char(z26602,c)) -> (m = z26602))),n)))",
+            "all n.(char(n,letp) -> (exists z26621.(exists c.(glide(c) & char(z26621,c)) & le(z26621,n)) & all c m.((char(m,c) & char(n,c)) -> (m = n))))",
+            "all n.(char(n,letp) -> (exists h.all z26637.(exists c.(glide(c) & char(z26637,c)) -> (le(z26637,n) & (-(h = z26637) -> -le(z26637,n)))) & all c m.((char(m,c) & char(n,c)) -> (m = n))))",
+            "all n.(char(n,letp) -> (exists c.(ad(\\z26656.exists c.(glide(c) & char(z26656,c)),n) & char(\\z26657.exists c.(glide(c) & char(z26657,c)),c)) & le(\\z26658.exists c.(glide(c) & char(z26658,c)),n) & all c m.((char(m,c) & char(n,c)) -> (m = n))))"
+        ]
+    },
+    {
+        "root_id": "ava-b-3",
+        "transcript_ids": [
+            "ava-b-3-699"
+        ],
+        "formulas": [
+            "((-exists c.(char(5,c) & char(2,c)) & exists c.char(c,leta)) | (exists c.(char(5,c) & char(2,c)) & -exists c.char(c,leta)))"
+        ]
+    },
+    {
+        "root_id": "ava-b-4",
+        "transcript_ids": [
+            "ava-b-4-1",
+            "ava-b-4-3"
+        ],
+        "formulas": [
+            "exists n.(char(n,leti) & ad(n,5))",
+            "exists n.(char(n,leti) & exists z26672.(5(z26672) & ad(n,z26672)))"
+        ]
+    },
+    {
+        "root_id": "ava-c-1",
+        "transcript_ids": [
+            "ava-c-1-14"
+        ],
+        "formulas": [
+            "all n.((exists c.(-vowel(c) & char(n,c)) & ad(4,n)) -> exists z28119.(char(z28119,lete) & le(z28119,n)))"
+        ]
+    },
+    {
+        "root_id": "ava-c-3",
+        "transcript_ids": [
+            "ava-c-3-18",
+            "ava-c-3-19",
+            "ava-c-3-105"
+        ],
+        "formulas": [
+            "all n.(-(exists c.(char(n,c) & even(n)) & exists c.(vowel(c) & char(n,c)) & \\z30529.ad(z30529,n) & exists c.(char(n,c) & odd(n)) & exists c.(-vowel(c) & char(n,c))) -> -le(3,n))",
+            "all n.(-(exists c.(char(n,c) & even(n)) & exists c.(vowel(c) & char(n,c)) & ad(n,\\z30560.(exists c.(char(z30560,c) & odd(z30560)) & exists c.(-vowel(c) & char(z30560,c))))) -> -le(3,n))",
+            "(exists h.all m.(char(\\x.(exists c.(char(x,c) & even(x)) & exists c.(vowel(c) & char(x,c))),h) & (-(m = \\x.(exists c.(char(x,c) & even(x)) & exists c.(vowel(c) & char(x,c)))) -> (\\n.ad(n,\\x.(exists c.(char(x,c) & even(x)) & exists c.(vowel(c) & char(x,c)))) & -\\n.ad(n,m)))) & le(3,\\n.exists c.(-vowel(c) & char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "ava-c-5",
+        "transcript_ids": [
+            "ava-c-5-3",
+            "ava-c-5-15"
+        ],
+        "formulas": [
+            "exists n.(exists c.(glide(c) & char(n,c)) & le(n,4) & ((exists c.-voiced(n,c) & exists c.(capital(c) & char(n,c))) | -exists c d.(le(n,d) & char(n,c))))",
+            "exists n.(char(n,leti) & le(n,4) & ((exists c.-voiced(n,c) & exists c.(capital(c) & char(n,c))) | -exists c d.(le(n,d) & char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "eero-a-3",
+        "transcript_ids": [
+            "eero-a-3-1",
+            "eero-a-3-3"
+        ],
+        "formulas": [
+            "exists n.(exists c.(glide(c) & char(n,c)) & all c m.((char(m,c) & char(n,c)) -> (m = n)))",
+            "exists h.all n.(exists c.(glide(c) & char(n,c)) -> (all c m.((char(m,c) & char(n,c)) -> (m = n)) & (-(h = n) -> -all c m.((char(m,c) & char(n,c)) -> (m = n)))))"
+        ]
+    },
+    {
+        "root_id": "eero-a-4",
+        "transcript_ids": [
+            "eero-a-4-1"
+        ],
+        "formulas": [
+            "all n.(exists c.(vowel(c) & char(n,c)) -> exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))))"
+        ]
+    },
+    {
+        "root_id": "eero-a-5",
+        "transcript_ids": [
+            "eero-a-5-2"
+        ],
+        "formulas": [
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & -exists c.(capital(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "eero-a-7",
+        "transcript_ids": [
+            "eero-a-7-21",
+            "eero-a-7-41"
+        ],
+        "formulas": [
+            "le(4,5)",
+            "exists h.all n.(5(n) -> (le(4,n) & (-(h = n) -> -le(4,n))))"
+        ]
+    },
+    {
+        "root_id": "eero-a-9",
+        "transcript_ids": [
+            "eero-a-9-1"
+        ],
+        "formulas": [
+            "all n.(exists c.(vowel(c) & char(n,c)) -> -exists h.all z31120.(exists c.(-vowel(c) & char(z31120,c)) -> (le(z31120,n) & (-(h = z31120) -> -le(z31120,n)))))"
+        ]
+    },
+    {
+        "root_id": "eero-b-1",
+        "transcript_ids": [
+            "eero-b-1-32",
+            "eero-b-1-78"
+        ],
+        "formulas": [
+            "all n.((exists c.char(n,c) & ad(n,2)) -> exists c.(char(n,c) & mirrored(n)))",
+            "all n.((exists c.char(n,c) & exists h.all z31327.(2(z31327) -> (ad(n,z31327) & (-(h = z31327) -> -ad(n,z31327))))) -> exists c.(char(n,c) & mirrored(n)))"
+        ]
+    },
+    {
+        "root_id": "eero-b-2",
+        "transcript_ids": [
+            "eero-b-2-76",
+            "eero-b-2-111",
+            "eero-b-2-112",
+            "eero-b-2-137"
+        ],
+        "formulas": [
+            "exists n.(char(n,lett) & (exists c.(vowel(c) & char(n,c)) | (exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)))) & exists c.char(n,c))",
+            "exists n.(char(n,lett) & (exists h.all z31409.(exists c.(vowel(c) & char(z31409,c)) -> (n(z31409) & (-(h = z31409) -> -n(z31409)))) | (exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)))) & exists c.char(n,c))",
+            "all n.((char(n,lett) & (exists c.(vowel(c) & char(n,c)) | (exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m))))) -> -exists c.char(n,c))",
+            "all n.((char(n,lett) & (exists h.all z31423.(exists c.(vowel(c) & char(z31423,c)) -> (n(z31423) & (-(h = z31423) -> -n(z31423)))) | (exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m))))) -> -exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "eero-b-4",
+        "transcript_ids": [
+            "eero-b-4-10"
+        ],
+        "formulas": [
+            "all n.(-(exists c.(vowel(c) & char(n,c)) & capital(c3) & exists c.char(n,c)) -> -exists z31433.(char(z31433,letu) & le(n,z31433)))"
+        ]
+    },
+    {
+        "root_id": "eero-c-2",
+        "transcript_ids": [
+            "eero-c-2-3"
+        ],
+        "formulas": [
+            "(exists h.all m.(char(\\x.(exists c.(char(x,c) & mirrored(x)) & exists c.char(x,c)),h) & (-(m = \\x.(exists c.(char(x,c) & mirrored(x)) & exists c.char(x,c))) -> (-all c m.((char(m,c) & char(\\x.(exists c.(char(x,c) & mirrored(x)) & exists c.char(x,c)),c)) -> (m = \\x.(exists c.(char(x,c) & mirrored(x)) & exists c.char(x,c)))) & --all c z34125.((char(z34125,c) & char(m,c)) -> (z34125 = m))))) & all n.((exists c.-voiced(n,c) & char(n,leti)) -> -exists c.char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "eero-c-3",
+        "transcript_ids": [
+            "eero-c-3-5",
+            "eero-c-3-12"
+        ],
+        "formulas": [
+            "(all n.(exists c.(glide(c) & char(n,c)) -> all c m.((char(m,c) & char(n,c)) -> (m = n))) & all n.(exists c.(-vowel(c) & char(n,c)) -> exists c.(capital(c) & char(n,c))))",
+            "(all n.(exists c.(glide(c) & char(n,c)) -> all c m.((char(m,c) & char(n,c)) -> (m = n))) & all n.(exists c.(-vowel(c) & char(n,c)) -> (capital(c3) & exists c.char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "eero-c-5",
+        "transcript_ids": [
+            "eero-c-5-5"
+        ],
+        "formulas": [
+            "all n.((char(n,letu) & ad(3,n)) -> (exists c.(capital(c) & char(n,c)) & -exists c d.(le(n,d) & char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "evelyn-a-1",
+        "transcript_ids": [
+            "evelyn-a-1-15",
+            "evelyn-a-1-21"
+        ],
+        "formulas": [
+            "exists n.(exists c.(vowel(c) & char(n,c)) & exists z34149.(exists c.(-vowel(c) & char(z34149,c)) & le(z34149,n)))",
+            "exists n.(exists c.(vowel(c) & char(n,c)) & exists h.all z34172.(exists c.(-vowel(c) & char(z34172,c)) -> (le(z34172,n) & (-(h = z34172) -> -le(z34172,n)))))"
+        ]
+    },
+    {
+        "root_id": "evelyn-a-10",
+        "transcript_ids": [
+            "evelyn-a-10-11",
+            "evelyn-a-10-20",
+            "evelyn-a-10-21",
+            "evelyn-a-10-35"
+        ],
+        "formulas": [
+            "(-exists c d.(le(3,d) & char(3,c)) & -exists c d.(le(d,3) & char(3,c)))",
+            "exists h.all n.(3(n) -> (-exists c d.(le(n,d) & char(n,c)) & -exists c d.(le(d,n) & char(n,c)) & (-(h = n) -> -(-exists c d.(le(n,d) & char(n,c)) & -exists c d.(le(d,n) & char(n,c))))))",
+            "exists n.(3(n) & -exists c d.(le(n,d) & char(n,c)) & -exists c d.(le(d,n) & char(n,c)))",
+            "all n.(3(n) -> -(-exists c d.(le(n,d) & char(n,c)) & -exists c d.(le(d,n) & char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "evelyn-a-2",
+        "transcript_ids": [
+            "evelyn-a-2-1"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> exists c.(glide(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "evelyn-a-3",
+        "transcript_ids": [
+            "evelyn-a-3-2"
+        ],
+        "formulas": [
+            "all n.(-1(n) -> -exists c.(capital(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "evelyn-a-4",
+        "transcript_ids": [
+            "evelyn-a-4-1"
+        ],
+        "formulas": [
+            "exists n.(exists c.(vowel(c) & char(n,c)) & exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))))"
+        ]
+    },
+    {
+        "root_id": "evelyn-a-5",
+        "transcript_ids": [
+            "evelyn-a-5-233",
+            "evelyn-a-5-264"
+        ],
+        "formulas": [
+            "all n.((exists c.char(n,c) & exists z34428.(exists c.(-vowel(c) & char(z34428,c)) & le(z34428,n))) -> char(n,leta))",
+            "all n.((exists c.char(n,c) & exists h.all z34448.(exists c.(-vowel(c) & char(z34448,c)) -> (le(z34448,n) & (-(h = z34448) -> -le(z34448,n))))) -> char(n,leta))"
+        ]
+    },
+    {
+        "root_id": "evelyn-a-7",
+        "transcript_ids": [
+            "evelyn-a-7-6",
+            "evelyn-a-7-7",
+            "evelyn-a-7-10"
+        ],
+        "formulas": [
+            "all n.(exists c.(vowel(c) & char(n,c)) -> exists z34491.(exists c.(vowel(c) & char(z34491,c)) & ad(n,z34491)))",
+            "all n.(exists c.(vowel(c) & char(n,c)) -> all z34501.(exists c.(vowel(c) & char(z34501,c)) -> ad(n,z34501)))",
+            "all n.(exists c.(vowel(c) & char(n,c)) -> exists h.all z34511.(exists c.(vowel(c) & char(z34511,c)) -> (ad(n,z34511) & (-(h = z34511) -> -ad(n,z34511)))))"
+        ]
+    },
+    {
+        "root_id": "evelyn-a-8",
+        "transcript_ids": [
+            "evelyn-a-8-1",
+            "evelyn-a-8-12",
+            "evelyn-a-8-14",
+            "evelyn-a-8-15",
+            "evelyn-a-8-52",
+            "evelyn-a-8-58",
+            "evelyn-a-8-119",
+            "evelyn-a-8-183"
+        ],
+        "formulas": [
+            "(exists m n.(exists c.char(n,c) & exists h.all z34518.(exists c.(vowel(c) & char(z34518,c)) -> (n(z34518) & (-(h = z34518) -> -n(z34518)))) & exists c.char(m,c) & exists h.all n.(exists c.(vowel(c) & char(n,c)) -> (m(n) & (-(h = n) -> -m(n)))) & -(m = n)) & ad(\\n.char(n,leta),3))",
+            "(exists m n.(exists c.char(n,c) & -exists c.(vowel(c) & char(n,c)) & exists c.char(m,c) & -exists c.(vowel(c) & char(m,c)) & -(m = n)) & ad(\\n.char(n,leta),3))",
+            "exists m n.(exists c.char(n,c) & exists h.all z34546.(exists c.(vowel(c) & char(z34546,c)) -> (n(z34546) & (-(h = z34546) -> -n(z34546)))) & ad(n,3) & exists c.char(m,c) & exists h.all z34546.(exists c.(vowel(c) & char(z34546,c)) -> (m(z34546) & (-(h = z34546) -> -m(z34546)))) & ad(m,3) & -(m = n))",
+            "(exists m n.(exists c.char(n,c) & exists c.(vowel(c) & char(n,c)) & exists c.char(m,c) & exists c.(vowel(c) & char(m,c)) & -(m = n)) & ad(\\n.char(n,leta),3))",
+            "exists m n.(exists c.char(n,c) & -exists c.(vowel(c) & char(n,c)) & ad(n,3) & exists c.char(m,c) & -exists c.(vowel(c) & char(m,c)) & ad(m,3) & -(m = n))",
+            "exists m n.(exists c.char(n,c) & exists c.(vowel(c) & char(n,c)) & ad(n,3) & exists c.char(m,c) & exists c.(vowel(c) & char(m,c)) & ad(m,3) & -(m = n))",
+            "exists m n.(exists c.char(n,c) & -capital(c3) & ad(n,3) & exists c.char(m,c) & -capital(c3) & ad(m,3) & -(m = n))",
+            "exists m n.(exists c.char(n,c) & char(n,leta) & ad(n,3) & exists c.char(m,c) & char(m,leta) & ad(m,3) & -(m = n))"
+        ]
+    },
+    {
+        "root_id": "evelyn-a-9",
+        "transcript_ids": [
+            "evelyn-a-9-1"
+        ],
+        "formulas": [
+            "all n.((capital(c2) & exists c.char(n,c)) -> all c m.((char(m,c) & char(n,c)) -> (m = n)))"
+        ]
+    },
+    {
+        "root_id": "evelyn-b-1",
+        "transcript_ids": [
+            "evelyn-b-1-4",
+            "evelyn-b-1-25"
+        ],
+        "formulas": [
+            "((-((-exists c.(char(1,c) & char(3,c)) & exists n.(exists c.(glide(c) & char(n,c)) & exists c.char(n,c))) | (exists c.(char(1,c) & char(3,c)) & -exists n.(exists c.(glide(c) & char(n,c)) & exists c.char(n,c)))) & exists n.(exists c.char(n,c) & all c m.((char(m,c) & char(n,c)) -> (m = n)))) | (((-exists c.(char(1,c) & char(3,c)) & exists n.(exists c.(glide(c) & char(n,c)) & exists c.char(n,c))) | (exists c.(char(1,c) & char(3,c)) & -exists n.(exists c.(glide(c) & char(n,c)) & exists c.char(n,c)))) & -exists n.(exists c.char(n,c) & all c m.((char(m,c) & char(n,c)) -> (m = n)))))",
+            "((-((-exists c.(char(1,c) & char(3,c)) & exists n.(exists c.(glide(c) & char(n,c)) & exists c.char(n,c))) | (exists c.(char(1,c) & char(3,c)) & -exists n.(exists c.(glide(c) & char(n,c)) & exists c.char(n,c)))) & exists n.(exists c.char(n,c) & all c m.((char(m,c) & char(n,c)) -> (m = n)))) | (((-exists c.(char(1,c) & char(3,c)) & exists n.(exists c.(glide(c) & char(n,c)) & exists c.char(n,c))) | (exists c.(char(1,c) & char(3,c)) & -exists n.(exists c.(glide(c) & char(n,c)) & exists c.char(n,c)))) & -exists n.(exists c.char(n,c) & all c m.((char(m,c) & char(n,c)) -> (m = n)))))"
+        ]
+    },
+    {
+        "root_id": "evelyn-b-3",
+        "transcript_ids": [
+            "evelyn-b-3-1",
+            "evelyn-b-3-2"
+        ],
+        "formulas": [
+            "exists n.(exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)) & exists c.(char(n,c) & even(n)) & char(n,lett) & exists c.(capital(c) & char(n,c)) & exists z34823.(exists c.(vowel(c) & char(z34823,c)) & exists c.char(z34823,c) & le(n,z34823)))",
+            "exists n.(exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)) & exists c.(char(n,c) & even(n)) & char(n,lett) & exists c.(capital(c) & char(n,c)) & exists h.all z34832.((exists c.(vowel(c) & char(z34832,c)) & exists c.char(z34832,c)) -> (le(n,z34832) & (-(h = z34832) -> -le(n,z34832)))))"
+        ]
+    },
+    {
+        "root_id": "evelyn-b-5",
+        "transcript_ids": [
+            "evelyn-b-5-2"
+        ],
+        "formulas": [
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & exists c.(vowel(c) & char(n,c)) & exists c.(char(n,c) & odd(n)))"
+        ]
+    },
+    {
+        "root_id": "evelyn-c-2",
+        "transcript_ids": [
+            "evelyn-c-2-757",
+            "evelyn-c-2-977"
+        ],
+        "formulas": [
+            "((--exists c d.(le(\\x.-exists c.char(x,c),d) & char(\\x.-exists c.char(x,c),c)) & all n.(exists c.char(n,c) -> --exists c d.(le(d,n) & char(n,c)))) | (-exists c d.(le(\\x.-exists c.char(x,c),d) & char(\\x.-exists c.char(x,c),c)) & -all n.(exists c.char(n,c) -> --exists c d.(le(d,n) & char(n,c)))) | all n.((all c m.((char(m,c) & char(n,c)) -> (m = n)) & exists c.char(n,c)) -> -char(n,letp)))",
+            "((-all n.(exists c.char(n,c) -> --exists c d.(le(n,d) & char(n,c))) & all n.(exists c.char(n,c) -> --exists c d.(le(d,n) & char(n,c)))) | (all n.(exists c.char(n,c) -> --exists c d.(le(n,d) & char(n,c))) & -all n.(exists c.char(n,c) -> --exists c d.(le(d,n) & char(n,c)))) | all n.((all c m.((char(m,c) & char(n,c)) -> (m = n)) & exists c.char(n,c)) -> -char(n,letp)))"
+        ]
+    },
+    {
+        "root_id": "ezra-a-2",
+        "transcript_ids": [
+            "ezra-a-2-1",
+            "ezra-a-2-4"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> -ad(n,\\n.exists c.(glide(c) & char(n,c))))",
+            "ad(\\x.-exists c.(-vowel(c) & char(x,c)),\\n.exists c.(glide(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "ezra-a-4",
+        "transcript_ids": [
+            "ezra-a-4-1"
+        ],
+        "formulas": [
+            "all n.((exists c.(vowel(c) & char(n,c)) & ad(n,3)) -> -exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "ezra-a-5",
+        "transcript_ids": [
+            "ezra-a-5-1"
+        ],
+        "formulas": [
+            "exists c.(char(1,c) & char(4,c))"
+        ]
+    },
+    {
+        "root_id": "ezra-a-6",
+        "transcript_ids": [
+            "ezra-a-6-1"
+        ],
+        "formulas": [
+            "exists n.(exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))) & exists c.(vowel(c) & char(n,c)) & le(n,3))"
+        ]
+    },
+    {
+        "root_id": "ezra-a-7",
+        "transcript_ids": [
+            "ezra-a-7-1",
+            "ezra-a-7-9",
+            "ezra-a-7-14",
+            "ezra-a-7-23",
+            "ezra-a-7-96",
+            "ezra-a-7-102",
+            "ezra-a-7-117",
+            "ezra-a-7-341"
+        ],
+        "formulas": [
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)) & exists z35554.(exists c.(vowel(c) & char(z35554,c)) & le(z35554,n)) & exists c.char(n,c))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)) & exists h.all z35588.(exists c.(vowel(c) & char(z35588,c)) -> (le(z35588,n) & (-(h = z35588) -> -le(z35588,n)))) & exists c.char(n,c))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)) & le(\\z35606.exists c.(vowel(c) & char(z35606,c)),n) & exists c.char(n,c))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)) & exists z35620.(exists c.(vowel(c) & char(z35620,c)) & le(z35620,n)) & exists c.char(n,c))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)) & le(\\z35808.exists c.(vowel(c) & char(z35808,c)),n) & exists c.char(n,c))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)) & exists h.all z35816.(exists c.(vowel(c) & char(z35816,c)) -> (le(z35816,n) & (-(h = z35816) -> -le(z35816,n)))) & exists c.char(n,c))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)) & le(\\z35842.exists c.(vowel(c) & char(z35842,c)),n) & exists c.char(n,c))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)) & le(\\z36139.exists c.(vowel(c) & char(z36139,c)),n) & exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "ezra-a-9",
+        "transcript_ids": [
+            "ezra-a-9-1",
+            "ezra-a-9-4"
+        ],
+        "formulas": [
+            "all n.(exists c.(vowel(c) & char(n,c)) -> -exists z37518.(exists c.(glide(c) & char(z37518,c)) & le(z37518,n)))",
+            "all n.(exists c.(vowel(c) & char(n,c)) -> -le(\\n.exists c.(glide(c) & char(n,c)),n))"
+        ]
+    },
+    {
+        "root_id": "ezra-b-1",
+        "transcript_ids": [
+            "ezra-b-1-6",
+            "ezra-b-1-11",
+            "ezra-b-1-14",
+            "ezra-b-1-18",
+            "ezra-b-1-19",
+            "ezra-b-1-20"
+        ],
+        "formulas": [
+            "all n.(-3(n) -> -(char(n,letk) & exists c.(char(n,c) & odd(n))))",
+            "all n.(-3(n) -> -(exists h.all z37533.(char(z37533,letk) -> (n(z37533) & (-(h = z37533) -> -n(z37533)))) & exists c.(char(n,c) & odd(n))))",
+            "all n.(3(n) -> (char(n,letk) & exists c.(char(n,c) & odd(n))))",
+            "all n.(3(n) -> (exists h.all z37545.(char(z37545,letk) -> (n(z37545) & (-(h = z37545) -> -n(z37545)))) & exists c.(char(n,c) & odd(n))))",
+            "exists h.all n.(3(n) -> (char(n,letk) & exists c.(char(n,c) & odd(n)) & (-(h = n) -> -(char(n,letk) & exists c.(char(n,c) & odd(n))))))",
+            "exists h.all n.(3(n) -> (exists h.all z37551.(char(z37551,letk) -> (n(z37551) & (-(h = z37551) -> -n(z37551)))) & exists c.(char(n,c) & odd(n)) & (-(h = n) -> -(exists h.all z37551.(char(z37551,letk) -> (n(z37551) & (-(h = z37551) -> -n(z37551)))) & exists c.(char(n,c) & odd(n))))))"
+        ]
+    },
+    {
+        "root_id": "ezra-b-2",
+        "transcript_ids": [
+            "ezra-b-2-4"
+        ],
+        "formulas": [
+            "(all z37557.(char(z37557,lett) -> exists c.(char(z37557,c) & mirrored(z37557))) & all z37558.(char(z37558,letp) -> exists c.(char(z37558,c) & mirrored(z37558))))"
+        ]
+    },
+    {
+        "root_id": "ezra-b-4",
+        "transcript_ids": [
+            "ezra-b-4-30"
+        ],
+        "formulas": [
+            "all n.(-(exists c.(-vowel(c) & char(n,c)) & exists c.(char(n,c) & odd(n)) & exists c.char(n,c)) -> -exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))))"
+        ]
+    },
+    {
+        "root_id": "ezra-c-2",
+        "transcript_ids": [
+            "ezra-c-2-151"
+        ],
+        "formulas": [
+            "(exists c.(char(5,c) & char(3,c)) & all n.(exists c.(-vowel(c) & char(n,c)) -> (char(n,letp) | exists c.voiced(n,c))))"
+        ]
+    },
+    {
+        "root_id": "ezra-c-4",
+        "transcript_ids": [
+            "ezra-c-4-32",
+            "ezra-c-4-56",
+            "ezra-c-4-89",
+            "ezra-c-4-104",
+            "ezra-c-4-149",
+            "ezra-c-4-200"
+        ],
+        "formulas": [
+            "(all z38882.(char(z38882,lete) -> exists c.voiced(z38882,c)) & all z38883.(char(z38883,letp) -> -exists c.voiced(z38883,c)) & exists n.(char(n,lett) & all z38888.(exists c.(-vowel(c) & char(z38888,c)) -> le(z38888,n)) & exists c.char(n,c)))",
+            "(all z39023.(char(z39023,lete) -> exists c.voiced(z39023,c)) & all z39024.(char(z39024,letp) -> -exists c.voiced(z39024,c)) & exists n.(char(n,letp) & all z39029.(exists c.(-vowel(c) & char(z39029,c)) -> le(z39029,n)) & exists c.char(n,c)))",
+            "(all z39214.(char(z39214,lete) -> exists c.voiced(z39214,c)) & all z39215.(char(z39215,letp) -> -exists c.voiced(z39215,c)) & exists n.(char(n,letd) & all z39220.(exists c.(-vowel(c) & char(z39220,c)) -> le(z39220,n)) & exists c.char(n,c)))",
+            "((all z39295.(char(z39295,lete) -> exists c.voiced(z39295,c)) | all z39296.(char(z39296,letp) -> -exists c.voiced(z39296,c))) & exists n.(char(n,lett) & all z39301.(exists c.(-vowel(c) & char(z39301,c)) -> le(z39301,n)) & exists c.char(n,c)))",
+            "((all z39519.(char(z39519,lete) -> exists c.voiced(z39519,c)) | all z39520.(char(z39520,letp) -> -exists c.voiced(z39520,c))) & exists n.(char(n,letp) & all z39525.(exists c.(-vowel(c) & char(z39525,c)) -> le(z39525,n)) & exists c.char(n,c)))",
+            "((all z39743.(char(z39743,lete) -> exists c.voiced(z39743,c)) | all z39744.(char(z39744,letp) -> -exists c.voiced(z39744,c))) & exists n.(char(n,letd) & all z39749.(exists c.(-vowel(c) & char(z39749,c)) -> le(z39749,n)) & exists c.char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "ezra-c-5",
+        "transcript_ids": [
+            "ezra-c-5-53"
+        ],
+        "formulas": [
+            "(all n.(exists c.(vowel(c) & char(n,c)) -> ad(n,\\n.(capital(c2) & exists c.(glide(c) & char(n,c))))) & exists c.(char(4,c) & char(2,c)))"
+        ]
+    },
+    {
+        "root_id": "hazel-a-1",
+        "transcript_ids": [
+            "hazel-a-1-1"
+        ],
+        "formulas": [
+            "all n.(exists c.(vowel(c) & char(n,c)) -> exists c.(char(n,c) & mirrored(n)))"
+        ]
+    },
+    {
+        "root_id": "hazel-a-10",
+        "transcript_ids": [
+            "hazel-a-10-9"
+        ],
+        "formulas": [
+            "all n.((capital(c2) & exists c.char(n,c)) -> exists c.(-vowel(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "hazel-a-2",
+        "transcript_ids": [
+            "hazel-a-2-2",
+            "hazel-a-2-3",
+            "hazel-a-2-5",
+            "hazel-a-2-7",
+            "hazel-a-2-11",
+            "hazel-a-2-12",
+            "hazel-a-2-13",
+            "hazel-a-2-15",
+            "hazel-a-2-18",
+            "hazel-a-2-21",
+            "hazel-a-2-24",
+            "hazel-a-2-26"
+        ],
+        "formulas": [
+            "(exists c.(glide(c) & char(3,c)) | exists c.(capital(c) & char(3,c)))",
+            "(exists c.(glide(c) & char(3,c)) | exists c.(capital(c) & char(3,c)))",
+            "exists h.all n.(3(n) -> ((exists c.(glide(c) & char(n,c)) | exists c.(capital(c) & char(n,c))) & (-(h = n) -> -(exists c.(glide(c) & char(n,c)) | exists c.(capital(c) & char(n,c))))))",
+            "all n.(3(n) -> -(exists c.(glide(c) & char(n,c)) | exists c.(capital(c) & char(n,c))))",
+            "exists h.all n.(3(n) -> ((exists c.(glide(c) & char(n,c)) | exists c.(capital(c) & char(n,c))) & (-(h = n) -> -(exists c.(glide(c) & char(n,c)) | exists c.(capital(c) & char(n,c))))))",
+            "(exists z41857.(exists c.(glide(c) & char(z41857,c)) & 3(z41857)) | exists c.(capital(c) & char(3,c)))",
+            "all n.(3(n) -> -(exists c.(glide(c) & char(n,c)) | exists c.(capital(c) & char(n,c))))",
+            "(exists z41858.(exists c.(glide(c) & char(z41858,c)) & 3(z41858)) | exists c.(capital(c) & char(3,c)))",
+            "exists h.all n.(3(n) -> ((exists z41867.(exists c.(glide(c) & char(z41867,c)) & n(z41867)) | exists c.(capital(c) & char(n,c))) & (-(h = n) -> -(exists z41867.(exists c.(glide(c) & char(z41867,c)) & n(z41867)) | exists c.(capital(c) & char(n,c))))))",
+            "all n.(3(n) -> -(exists z41872.(exists c.(glide(c) & char(z41872,c)) & n(z41872)) | exists c.(capital(c) & char(n,c))))",
+            "exists h.all n.(3(n) -> ((exists z41878.(exists c.(glide(c) & char(z41878,c)) & n(z41878)) | exists c.(capital(c) & char(n,c))) & (-(h = n) -> -(exists z41878.(exists c.(glide(c) & char(z41878,c)) & n(z41878)) | exists c.(capital(c) & char(n,c))))))",
+            "all n.(3(n) -> -(exists z41881.(exists c.(glide(c) & char(z41881,c)) & n(z41881)) | exists c.(capital(c) & char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "hazel-a-3",
+        "transcript_ids": [
+            "hazel-a-3-2",
+            "hazel-a-3-5",
+            "hazel-a-3-8"
+        ],
+        "formulas": [
+            "all n.(2(n) -> -exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))))",
+            "exists m c.(char(2,c) & char(m,c) & (le(m,2) | le(2,m)))",
+            "exists h.all n.(2(n) -> (exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))) & (-(h = n) -> -exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))))))"
+        ]
+    },
+    {
+        "root_id": "hazel-a-4",
+        "transcript_ids": [
+            "hazel-a-4-4"
+        ],
+        "formulas": [
+            "all n.(exists c.(glide(c) & char(n,c)) -> -exists c d.(le(n,d) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "hazel-a-5",
+        "transcript_ids": [
+            "hazel-a-5-1",
+            "hazel-a-5-4"
+        ],
+        "formulas": [
+            "exists n.(capital(c2) & exists c.char(n,c) & exists c.(cent(n) & char(n,c)))",
+            "exists n.(capital(c2) & exists c.char(n,c) & exists c.(cent(n) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "hazel-a-6",
+        "transcript_ids": [
+            "hazel-a-6-1",
+            "hazel-a-6-4",
+            "hazel-a-6-11"
+        ],
+        "formulas": [
+            "exists m n.(exists c.(vowel(c) & char(n,c)) & exists z41922.(exists c.(-vowel(c) & char(z41922,c)) & le(z41922,n)) & exists c.(vowel(c) & char(m,c)) & exists n.(exists c.(-vowel(c) & char(n,c)) & le(n,m)) & -(m = n))",
+            "exists m n.(exists c.(vowel(c) & char(n,c)) & exists z41930.(exists c.(-vowel(c) & char(z41930,c)) & le(z41930,n)) & exists c.(vowel(c) & char(m,c)) & exists n.(exists c.(-vowel(c) & char(n,c)) & le(n,m)) & -(m = n))",
+            "exists m n.(exists c.(vowel(c) & char(n,c)) & exists z41938.(exists c.(-vowel(c) & char(z41938,c)) & le(z41938,n)) & exists c.(vowel(c) & char(m,c)) & exists n.(exists c.(-vowel(c) & char(n,c)) & le(n,m)) & -(m = n))"
+        ]
+    },
+    {
+        "root_id": "hazel-a-7",
+        "transcript_ids": [
+            "hazel-a-7-1"
+        ],
+        "formulas": [
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & all c m.((char(m,c) & char(n,c)) -> (m = n)))"
+        ]
+    },
+    {
+        "root_id": "hazel-a-8",
+        "transcript_ids": [
+            "hazel-a-8-1"
+        ],
+        "formulas": [
+            "all n.(exists c.char(n,c) -> exists c.(capital(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "hazel-a-9",
+        "transcript_ids": [
+            "hazel-a-9-1"
+        ],
+        "formulas": [
+            "exists n.(capital(c2) & exists c.char(n,c) & all z41953.(exists c.(vowel(c) & char(z41953,c)) -> le(n,z41953)))"
+        ]
+    },
+    {
+        "root_id": "hazel-b-4",
+        "transcript_ids": [
+            "hazel-b-4-2"
+        ],
+        "formulas": [
+            "-all n.((exists c.char(n,c) & exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m)))) -> exists c.(capital(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "hazel-b-5",
+        "transcript_ids": [
+            "hazel-b-5-118"
+        ],
+        "formulas": [
+            "((--all n.(char(n,letu) -> exists c.(char(n,c) & mirrored(n))) & exists n.(exists c.(cent(n) & char(n,c)) & exists c.(vowel(c) & char(n,c)) & exists c.char(n,c))) | (-all n.(char(n,letu) -> exists c.(char(n,c) & mirrored(n))) & -exists n.(exists c.(cent(n) & char(n,c)) & exists c.(vowel(c) & char(n,c)) & exists c.char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "ian-a-1",
+        "transcript_ids": [
+            "ian-a-1-2"
+        ],
+        "formulas": [
+            "all n.(exists c.(glide(c) & char(n,c)) -> exists c.(capital(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "ian-a-10",
+        "transcript_ids": [
+            "ian-a-10-28",
+            "ian-a-10-63"
+        ],
+        "formulas": [
+            "exists n.(exists c.(vowel(c) & char(n,c)) & exists z51981.(exists c.(glide(c) & char(z51981,c)) & le(z51981,n)) & exists c.char(n,c))",
+            "exists n.(exists c.(vowel(c) & char(n,c)) & exists h.all z52028.(exists c.(glide(c) & char(z52028,c)) -> (le(z52028,n) & (-(h = z52028) -> -le(z52028,n)))) & exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "ian-a-2",
+        "transcript_ids": [
+            "ian-a-2-1"
+        ],
+        "formulas": [
+            "exists n.(exists c.char(n,c) & le(3,n) & all c m.((char(m,c) & char(n,c)) -> (m = n)))"
+        ]
+    },
+    {
+        "root_id": "ian-a-3",
+        "transcript_ids": [
+            "ian-a-3-1"
+        ],
+        "formulas": [
+            "all n.(exists c.char(n,c) -> all c m.((char(m,c) & char(n,c)) -> (m = n)))"
+        ]
+    },
+    {
+        "root_id": "ian-a-4",
+        "transcript_ids": [
+            "ian-a-4-18",
+            "ian-a-4-71",
+            "ian-a-4-109"
+        ],
+        "formulas": [
+            "all n.((all c m.((char(m,c) & char(n,c)) -> (m = n)) & exists c.char(n,c)) -> -exists c.(vowel(c) & char(n,c)))",
+            "all n.((all c m.((char(m,c) & char(n,c)) -> (m = n)) & exists c.char(n,c)) -> -exists c.(vowel(c) & char(n,c)))",
+            "all n.((all c m.((char(m,c) & char(n,c)) -> (m = n)) & exists c.char(n,c)) -> -exists c.(vowel(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "ian-a-5",
+        "transcript_ids": [
+            "ian-a-5-1",
+            "ian-a-5-5"
+        ],
+        "formulas": [
+            "exists n.(exists c.(vowel(c) & char(n,c)) & le(n,5) & exists c.(vowel(c) & char(n,c)))",
+            "exists n.(exists c.(vowel(c) & char(n,c)) & exists h.all z52304.(5(z52304) -> (le(n,z52304) & (-(h = z52304) -> -le(n,z52304)))) & exists c.(vowel(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "ian-a-6",
+        "transcript_ids": [
+            "ian-a-6-1"
+        ],
+        "formulas": [
+            "exists n.(exists c.char(n,c) & -exists c.(vowel(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "ian-a-7",
+        "transcript_ids": [
+            "ian-a-7-3",
+            "ian-a-7-9",
+            "ian-a-7-15",
+            "ian-a-7-27"
+        ],
+        "formulas": [
+            "exists h.all n.((exists c.char(n,c) & exists c.(ad(4,n) & char(4,c)) & le(n,4)) -> (3(n) & (-(h = n) -> -3(n))))",
+            "exists h.all n.((exists c.char(n,c) & exists c.(ad(4,n) & char(4,c)) & le(n,4)) -> (exists h.all z52370.(3(z52370) -> (n(z52370) & (-(h = z52370) -> -n(z52370)))) & (-(h = n) -> -exists h.all z52371.(3(z52371) -> (n(z52371) & (-(h = z52371) -> -n(z52371)))))))",
+            "exists h.all n.((exists c.char(n,c) & exists h.all z52392.(4(z52392) -> (le(n,z52392) & (-(h = z52392) -> -le(n,z52392))))) -> (3(n) & (-(h = n) -> -3(n))))",
+            "exists h.all n.((exists c.char(n,c) & exists h.all z52442.(4(z52442) -> (le(n,z52442) & (-(h = z52442) -> -le(n,z52442))))) -> (exists h.all z52443.(3(z52443) -> (n(z52443) & (-(h = z52443) -> -n(z52443)))) & (-(h = n) -> -exists h.all z52444.(3(z52444) -> (n(z52444) & (-(h = z52444) -> -n(z52444)))))))"
+        ]
+    },
+    {
+        "root_id": "ian-a-8",
+        "transcript_ids": [
+            "ian-a-8-19",
+            "ian-a-8-55"
+        ],
+        "formulas": [
+            "exists h.all n.((exists c.(vowel(c) & char(n,c)) & exists z52580.(exists c.(-vowel(c) & char(z52580,c)) & le(n,z52580))) -> (-exists c.(-vowel(c) & char(n,c)) & (-(h = n) -> --exists c.(-vowel(c) & char(n,c)))))",
+            "exists h.all n.((exists c.(vowel(c) & char(n,c)) & exists h.all z52668.(exists c.(-vowel(c) & char(z52668,c)) -> (le(n,z52668) & (-(h = z52668) -> -le(n,z52668))))) -> (-exists c.(-vowel(c) & char(n,c)) & (-(h = n) -> --exists c.(-vowel(c) & char(n,c)))))"
+        ]
+    },
+    {
+        "root_id": "ian-a-9",
+        "transcript_ids": [
+            "ian-a-9-2"
+        ],
+        "formulas": [
+            "exists n.(exists c.(char(n,c) & mirrored(n)) & exists c.char(n,c) & exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "ian-b-2",
+        "transcript_ids": [
+            "ian-b-2-2",
+            "ian-b-2-6"
+        ],
+        "formulas": [
+            "exists n.(-exists c d.(le(n,d) & char(n,c)) & exists c.(capital(c) & char(n,c)) & char(n,lete) & exists c.(char(n,c) & mirrored(n)) & exists c.char(n,c))",
+            "exists n.(-exists c d.(le(n,d) & char(n,c)) & exists c.(capital(c) & char(n,c)) & char(n,letp) & exists c.(char(n,c) & mirrored(n)) & exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "ian-b-3",
+        "transcript_ids": [
+            "ian-b-3-2"
+        ],
+        "formulas": [
+            "all n.((exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))) & exists c.char(n,c)) -> exists z53014.(exists c.voiced(z53014,c) & exists c.(glide(c) & char(z53014,c)) & le(z53014,n)))"
+        ]
+    },
+    {
+        "root_id": "ian-b-5",
+        "transcript_ids": [
+            "ian-b-5-3",
+            "ian-b-5-24"
+        ],
+        "formulas": [
+            "exists m n.(char(n,letp) & exists z53077.(char(z53077,letk) & all z53075.(char(z53075,lett) -> le(z53077,z53075)) & le(z53077,n)) & char(m,letp) & exists n.(char(n,letk) & all z53075.(char(z53075,lett) -> le(n,z53075)) & le(n,m)) & -(m = n))",
+            "exists m n.(char(n,lett) & exists z53173.(char(z53173,letk) & all z53171.(char(z53171,lett) -> le(z53173,z53171)) & le(z53173,n)) & char(m,lett) & exists n.(char(n,letk) & all z53171.(char(z53171,lett) -> le(n,z53171)) & le(n,m)) & -(m = n))"
+        ]
+    },
+    {
+        "root_id": "julian-a-1",
+        "transcript_ids": [
+            "julian-a-1-1",
+            "julian-a-1-3"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> char(n,letk))",
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> exists h.all z53243.(char(z53243,letk) -> (n(z53243) & (-(h = z53243) -> -n(z53243)))))"
+        ]
+    },
+    {
+        "root_id": "julian-a-10",
+        "transcript_ids": [
+            "julian-a-10-1"
+        ],
+        "formulas": [
+            "all n.(exists c.(vowel(c) & char(n,c)) -> -char(n,letu))"
+        ]
+    },
+    {
+        "root_id": "julian-a-2",
+        "transcript_ids": [
+            "julian-a-2-3",
+            "julian-a-2-5"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> char(n,letp))",
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> char(n,lett))"
+        ]
+    },
+    {
+        "root_id": "julian-a-3",
+        "transcript_ids": [
+            "julian-a-3-1",
+            "julian-a-3-2"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> char(n,lett))",
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> exists h.all z53247.(char(z53247,lett) -> (n(z53247) & (-(h = z53247) -> -n(z53247)))))"
+        ]
+    },
+    {
+        "root_id": "julian-a-4",
+        "transcript_ids": [
+            "julian-a-4-1",
+            "julian-a-4-3"
+        ],
+        "formulas": [
+            "all n.(exists c.(vowel(c) & char(n,c)) -> char(n,letu))",
+            "all n.(exists c.(vowel(c) & char(n,c)) -> exists h.all z53249.(char(z53249,letu) -> (n(z53249) & (-(h = z53249) -> -n(z53249)))))"
+        ]
+    },
+    {
+        "root_id": "julian-a-5",
+        "transcript_ids": [
+            "julian-a-5-1",
+            "julian-a-5-3",
+            "julian-a-5-4",
+            "julian-a-5-7",
+            "julian-a-5-9",
+            "julian-a-5-10"
+        ],
+        "formulas": [
+            "char(1,letk)",
+            "exists n.(1(n) & char(n,letk))",
+            "exists h.all n.(1(n) -> (char(n,letk) & (-(h = n) -> -char(n,letk))))",
+            "exists h.all n.(char(n,letk) -> (1(n) & (-(h = n) -> -1(n))))",
+            "exists n.(1(n) & exists h.all z53251.(char(z53251,letk) -> (n(z53251) & (-(h = z53251) -> -n(z53251)))))",
+            "exists h.all n.(1(n) -> (exists h.all z53253.(char(z53253,letk) -> (n(z53253) & (-(h = z53253) -> -n(z53253)))) & (-(h = n) -> -exists h.all z53254.(char(z53254,letk) -> (n(z53254) & (-(h = z53254) -> -n(z53254)))))))"
+        ]
+    },
+    {
+        "root_id": "julian-a-6",
+        "transcript_ids": [
+            "julian-a-6-6",
+            "julian-a-6-11",
+            "julian-a-6-12"
+        ],
+        "formulas": [
+            "char(1,letp)",
+            "exists h.all n.(1(n) -> (char(n,letp) & (-(h = n) -> -char(n,letp))))",
+            "exists n.(1(n) & char(n,letp))"
+        ]
+    },
+    {
+        "root_id": "julian-a-7",
+        "transcript_ids": [
+            "julian-a-7-7",
+            "julian-a-7-11"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> -char(n,letk))",
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> -exists h.all z53263.(char(z53263,letk) -> (n(z53263) & (-(h = z53263) -> -n(z53263)))))"
+        ]
+    },
+    {
+        "root_id": "julian-a-8",
+        "transcript_ids": [
+            "julian-a-8-2"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> -char(n,letp))"
+        ]
+    },
+    {
+        "root_id": "julian-a-9",
+        "transcript_ids": [
+            "julian-a-9-1",
+            "julian-a-9-7"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> -char(n,lett))",
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> -exists h.all z53271.(char(z53271,lett) -> (n(z53271) & (-(h = z53271) -> -n(z53271)))))"
+        ]
+    },
+    {
+        "root_id": "julian-b-2",
+        "transcript_ids": [
+            "julian-b-2-2"
+        ],
+        "formulas": [
+            "-all n.((-exists c d.(le(n,d) & char(n,c)) & exists c.(glide(c) & char(n,c))) -> exists z53277.(char(z53277,letu) & le(n,z53277)))"
+        ]
+    },
+    {
+        "root_id": "julian-b-4",
+        "transcript_ids": [
+            "julian-b-4-2",
+            "julian-b-4-3",
+            "julian-b-4-15",
+            "julian-b-4-22"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> (char(n,lett) & exists z53296.(exists c.(vowel(c) & char(z53296,c)) & le(z53296,n))))",
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> (exists h.all z53302.(char(z53302,lett) -> (n(z53302) & (-(h = z53302) -> -n(z53302)))) & exists z53303.(exists c.(vowel(c) & char(z53303,c)) & le(z53303,n))))",
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> (exists h.all z53328.(char(z53328,letk) -> (n(z53328) & (-(h = z53328) -> -n(z53328)))) & exists z53329.(exists c.(vowel(c) & char(z53329,c)) & le(z53329,n))))",
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> (char(n,letk) & exists z53346.(exists c.(vowel(c) & char(z53346,c)) & le(z53346,n))))"
+        ]
+    },
+    {
+        "root_id": "julian-c-1",
+        "transcript_ids": [
+            "julian-c-1-2"
+        ],
+        "formulas": [
+            "exists n.(char(n,lett) & ad(2,n) & exists z53447.(exists c.voiced(z53447,c) & exists c.(glide(c) & char(z53447,c)) & le(z53447,n)))"
+        ]
+    },
+    {
+        "root_id": "julian-c-2",
+        "transcript_ids": [
+            "julian-c-2-104",
+            "julian-c-2-189",
+            "julian-c-2-219",
+            "julian-c-2-359",
+            "julian-c-2-774"
+        ],
+        "formulas": [
+            "(exists h.all m.(char(2,h) & (-(m = 2) -> (-exists c d.(le(2,d) & char(2,c)) & --exists c d.(le(m,d) & char(m,c))))) & exists n.(exists c.(vowel(c) & char(n,c)) & le(4,n) & char(n,letk) & exists c.(cent(n) & char(n,c))))",
+            "(exists h.all m.(char(2,h) & (-(m = 2) -> (-exists c d.(le(2,d) & char(2,c)) & --exists c d.(le(m,d) & char(m,c))))) & exists n.(exists c.(vowel(c) & char(n,c)) & le(4,n) & char(n,letk) & exists c.(cent(n) & char(n,c))))",
+            "(exists h.all m.(char(2,h) & (-(m = 2) -> (-exists c d.(le(2,d) & char(2,c)) & --exists c d.(le(m,d) & char(m,c))))) & exists n.(exists c.(vowel(c) & char(n,c)) & le(4,n) & exists h.all z53563.(char(z53563,letk) -> (n(z53563) & (-(h = z53563) -> -n(z53563)))) & exists c.(cent(n) & char(n,c))))",
+            "(exists h.all m.(char(2,h) & (-(m = 2) -> (-exists c d.(le(2,d) & char(2,c)) & --exists c d.(le(m,d) & char(m,c))))) & exists n.(exists c.(vowel(c) & char(n,c)) & le(4,n) & exists h.all z53602.(char(z53602,letk) -> (n(z53602) & (-(h = z53602) -> -n(z53602)))) & exists c.(cent(n) & char(n,c))))",
+            "(exists h.all m.(char(2,h) & (-(m = 2) -> (-exists c d.(le(2,d) & char(2,c)) & --exists c d.(le(m,d) & char(m,c))))) & exists n.(exists c.(vowel(c) & char(n,c)) & le(4,n) & char(n,letk) & exists c.(cent(n) & char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "julian-c-3",
+        "transcript_ids": [
+            "julian-c-3-8",
+            "julian-c-3-44",
+            "julian-c-3-49",
+            "julian-c-3-112"
+        ],
+        "formulas": [
+            "(all n.((exists c.(-vowel(c) & char(n,c)) & exists z53752.(capital(c2) & exists c.(-vowel(c) & char(z53752,c)) & le(z53752,n))) -> all c m.((char(m,c) & char(n,c)) -> (m = n))) & exists c.(char(4,c) & char(1,c)))",
+            "(all n.((exists c.(-vowel(c) & char(n,c)) & le(\\z53859.(capital(c2) & exists c.(-vowel(c) & char(z53859,c))),n)) -> all c m.((char(m,c) & char(n,c)) -> (m = n))) & exists c.(char(4,c) & char(1,c)))",
+            "(all n.((exists c.(-vowel(c) & char(n,c)) & exists h.all z53897.((capital(c2) & exists c.(-vowel(c) & char(z53897,c))) -> (le(z53897,n) & (-(h = z53897) -> -le(z53897,n))))) -> all c m.((char(m,c) & char(n,c)) -> (m = n))) & exists c.(char(4,c) & char(1,c)))",
+            "(all n.((exists c.(-vowel(c) & char(n,c)) & le(\\z54122.(capital(c2) & exists c.(-vowel(c) & char(z54122,c))),n)) -> all c m.((char(m,c) & char(n,c)) -> (m = n))) & exists c.(char(4,c) & char(1,c)))"
+        ]
+    },
+    {
+        "root_id": "julian-c-4",
+        "transcript_ids": [
+            "julian-c-4-23"
+        ],
+        "formulas": [
+            "((-exists h.all m.(char(\\x.(capital(c3) & exists c.(vowel(c) & char(x,c))),h) & (-(m = \\x.(capital(c3) & exists c.(vowel(c) & char(x,c)))) -> ((exists m c.(char(\\x.(capital(c3) & exists c.(vowel(c) & char(x,c))),c) & char(m,c) & (le(m,\\x.(capital(c3) & exists c.(vowel(c) & char(x,c)))) | le(\\x.(capital(c3) & exists c.(vowel(c) & char(x,c))),m))) | exists c.(char(\\x.(capital(c3) & exists c.(vowel(c) & char(x,c))),c) & mirrored(\\x.(capital(c3) & exists c.(vowel(c) & char(x,c)))))) & -(exists z54750 c.(char(m,c) & char(z54750,c) & (le(z54750,m) | le(m,z54750))) | exists c.(char(m,c) & mirrored(m)))))) & (exists m z54760.(char(z54760,leti) & exists c.char(z54760,c) & char(m,leti) & exists c.char(m,c) & -(m = z54760)) | exists z54761.(char(z54761,letk) & exists c.char(z54761,c)))) | (exists h.all m.(char(\\x.(capital(c3) & exists c.(vowel(c) & char(x,c))),h) & (-(m = \\x.(capital(c3) & exists c.(vowel(c) & char(x,c)))) -> ((exists m c.(char(\\x.(capital(c3) & exists c.(vowel(c) & char(x,c))),c) & char(m,c) & (le(m,\\x.(capital(c3) & exists c.(vowel(c) & char(x,c)))) | le(\\x.(capital(c3) & exists c.(vowel(c) & char(x,c))),m))) | exists c.(char(\\x.(capital(c3) & exists c.(vowel(c) & char(x,c))),c) & mirrored(\\x.(capital(c3) & exists c.(vowel(c) & char(x,c)))))) & -(exists z54750 c.(char(m,c) & char(z54750,c) & (le(z54750,m) | le(m,z54750))) | exists c.(char(m,c) & mirrored(m)))))) & -(exists m z54760.(char(z54760,leti) & exists c.char(z54760,c) & char(m,leti) & exists c.char(m,c) & -(m = z54760)) | exists z54761.(char(z54761,letk) & exists c.char(z54761,c)))))"
+        ]
+    },
+    {
+        "root_id": "julian-c-5",
+        "transcript_ids": [
+            "julian-c-5-176",
+            "julian-c-5-263",
+            "julian-c-5-274",
+            "julian-c-5-315"
+        ],
+        "formulas": [
+            "((-all n.((exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))) -> ad(n,4)) & exists n.(char(n,letp) & exists c.char(n,c))) | (all n.((exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))) -> ad(n,4)) & -exists n.(char(n,letp) & exists c.char(n,c))))",
+            "((-all n.((exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))) -> ad(n,4)) & exists n.(char(n,lett) & exists c.char(n,c))) | (all n.((exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))) -> ad(n,4)) & -exists n.(char(n,lett) & exists c.char(n,c))))",
+            "((-all n.((exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))) -> exists z56353.(4(z56353) & ad(n,z56353))) & exists n.(char(n,letp) & exists c.char(n,c))) | (all n.((exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))) -> exists z56353.(4(z56353) & ad(n,z56353))) & -exists n.(char(n,letp) & exists c.char(n,c))))",
+            "((-all n.((exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))) -> exists z56489.(4(z56489) & ad(n,z56489))) & exists n.(char(n,lett) & exists c.char(n,c))) | (all n.((exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))) -> exists z56489.(4(z56489) & ad(n,z56489))) & -exists n.(char(n,lett) & exists c.char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "kai-a-1",
+        "transcript_ids": [
+            "kai-a-1-36",
+            "kai-a-1-53"
+        ],
+        "formulas": [
+            "exists m c.(char(4,c) & char(m,c) & (le(m,4) | le(4,m)))",
+            "exists h.all n.(4(n) -> (exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))) & (-(h = n) -> -exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))))))"
+        ]
+    },
+    {
+        "root_id": "kai-a-10",
+        "transcript_ids": [
+            "kai-a-10-3",
+            "kai-a-10-4"
+        ],
+        "formulas": [
+            "all n.(exists c.(glide(c) & char(n,c)) -> -exists c.char(n,c))",
+            "all n.(char(n,letk) -> -exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "kai-a-3",
+        "transcript_ids": [
+            "kai-a-3-17"
+        ],
+        "formulas": [
+            "all n.(exists c.char(n,c) -> exists c.(char(n,c) & mirrored(n)))"
+        ]
+    },
+    {
+        "root_id": "legend-a-1",
+        "transcript_ids": [
+            "legend-a-1-1",
+            "legend-a-1-5",
+            "legend-a-1-7",
+            "legend-a-1-12"
+        ],
+        "formulas": [
+            "exists n.(exists c.(glide(c) & char(n,c)) & exists c.(vowel(c) & char(n,c)))",
+            "exists h.all n.(exists c.(glide(c) & char(n,c)) -> (exists c.(vowel(c) & char(n,c)) & (-(h = n) -> -exists c.(vowel(c) & char(n,c)))))",
+            "exists n.(exists c.(glide(c) & char(n,c)) & exists h.all z62266.(exists c.(vowel(c) & char(z62266,c)) -> (n(z62266) & (-(h = z62266) -> -n(z62266)))))",
+            "exists h.all n.(exists c.(glide(c) & char(n,c)) -> (exists h.all z62268.(exists c.(vowel(c) & char(z62268,c)) -> (n(z62268) & (-(h = z62268) -> -n(z62268)))) & (-(h = n) -> -exists h.all z62269.(exists c.(vowel(c) & char(z62269,c)) -> (n(z62269) & (-(h = z62269) -> -n(z62269)))))))"
+        ]
+    },
+    {
+        "root_id": "legend-a-10",
+        "transcript_ids": [
+            "legend-a-10-1"
+        ],
+        "formulas": [
+            "exists n.(exists c.(glide(c) & char(n,c)) & le(n,5) & exists c.(capital(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "legend-a-2",
+        "transcript_ids": [
+            "legend-a-2-1"
+        ],
+        "formulas": [
+            "exists n.(exists c.(vowel(c) & char(n,c)) & le(4,n) & -exists c d.(le(n,d) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "legend-a-3",
+        "transcript_ids": [
+            "legend-a-3-3",
+            "legend-a-3-10"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> (exists c.(char(n,c) & even(n)) & char(n,leta)))",
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> exists c.(char(n,c) & even(n)))"
+        ]
+    },
+    {
+        "root_id": "legend-a-4",
+        "transcript_ids": [
+            "legend-a-4-1",
+            "legend-a-4-3"
+        ],
+        "formulas": [
+            "all n.(exists c.(vowel(c) & char(n,c)) -> ad(n,1))",
+            "all n.(exists c.(vowel(c) & char(n,c)) -> exists h.all z62283.(1(z62283) -> (ad(n,z62283) & (-(h = z62283) -> -ad(n,z62283)))))"
+        ]
+    },
+    {
+        "root_id": "legend-a-5",
+        "transcript_ids": [
+            "legend-a-5-295"
+        ],
+        "formulas": [
+            "exists n.(exists c.(capital(c) & char(n,c)) & exists c.char(n,c) & char(n,leta))"
+        ]
+    },
+    {
+        "root_id": "legend-a-6",
+        "transcript_ids": [
+            "legend-a-6-2",
+            "legend-a-6-18"
+        ],
+        "formulas": [
+            "all n.((exists c.(glide(c) & char(n,c)) & ad(n,2)) -> exists c.(vowel(c) & char(n,c)))",
+            "all n.((exists c.(glide(c) & char(n,c)) & exists h.all z62372.(2(z62372) -> (ad(n,z62372) & (-(h = z62372) -> -ad(n,z62372))))) -> exists c.(vowel(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "legend-a-7",
+        "transcript_ids": [
+            "legend-a-7-1",
+            "legend-a-7-2"
+        ],
+        "formulas": [
+            "all n.((exists c.(vowel(c) & char(n,c)) & le(3,n)) -> all c m.((char(m,c) & char(n,c)) -> (m = n)))",
+            "all n.((exists c.(vowel(c) & char(n,c)) & exists z62482.(3(z62482) & le(z62482,n))) -> all c m.((char(m,c) & char(n,c)) -> (m = n)))"
+        ]
+    },
+    {
+        "root_id": "legend-a-8",
+        "transcript_ids": [
+            "legend-a-8-1"
+        ],
+        "formulas": [
+            "all n.(exists c.char(n,c) -> -exists c.(vowel(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "legend-a-9",
+        "transcript_ids": [
+            "legend-a-9-1",
+            "legend-a-9-3"
+        ],
+        "formulas": [
+            "all n.((exists c.(-vowel(c) & char(n,c)) & exists c.(capital(c) & char(n,c))) -> exists z62496.(exists c.(vowel(c) & char(z62496,c)) & le(n,z62496)))",
+            "all n.((exists c.(-vowel(c) & char(n,c)) & exists c.(capital(c) & char(n,c))) -> exists h.all z62505.(exists c.(vowel(c) & char(z62505,c)) -> (le(n,z62505) & (-(h = z62505) -> -le(n,z62505)))))"
+        ]
+    },
+    {
+        "root_id": "legend-b-2",
+        "transcript_ids": [
+            "legend-b-2-1",
+            "legend-b-2-2"
+        ],
+        "formulas": [
+            "-all n.(exists c.(-vowel(c) & char(n,c)) -> exists z62509.(-exists c d.(le(z62509,d) & char(z62509,c)) & char(z62509,letu) & le(n,z62509)))",
+            "-all n.(exists c.(-vowel(c) & char(n,c)) -> exists z62518.(-exists c d.(le(z62518,d) & char(z62518,c)) & char(z62518,letu) & le(n,z62518)))"
+        ]
+    },
+    {
+        "root_id": "legend-b-4",
+        "transcript_ids": [
+            "legend-b-4-8",
+            "legend-b-4-29",
+            "legend-b-4-88",
+            "legend-b-4-120",
+            "legend-b-4-251",
+            "legend-b-4-322"
+        ],
+        "formulas": [
+            "all n.((exists c.char(n,c) & exists c.(-vowel(c) & char(n,c))) -> -(exists z62651.(char(z62651,lett) & le(n,z62651)) | exists z62652.(char(z62652,letu) & le(n,z62652))))",
+            "all n.((exists c.char(n,c) & exists c.(-vowel(c) & char(n,c))) -> -(exists z62741.(char(z62741,lett) & le(n,z62741)) | exists z62742.(char(z62742,letu) & le(n,z62742))))",
+            "all n.((exists c.char(n,c) & exists c.(-vowel(c) & char(n,c))) -> -(exists z63041.(char(z63041,lett) & le(n,z63041)) | exists z63042.(char(z63042,letu) & le(n,z63042))))",
+            "all n.((exists c.char(n,c) & exists c.(-vowel(c) & char(n,c))) -> -(exists z63193.(char(z63193,lett) & le(n,z63193)) | exists z63194.(char(z63194,letu) & le(n,z63194))))",
+            "all n.((exists c.char(n,c) & exists c.(-vowel(c) & char(n,c))) -> -(exists h.all z63805.(char(z63805,lett) -> (le(n,z63805) & (-(h = z63805) -> -le(n,z63805)))) | exists z63806.(char(z63806,letu) & le(n,z63806))))",
+            "all n.((exists c.char(n,c) & exists c.(-vowel(c) & char(n,c))) -> -(exists h.all z64157.(char(z64157,lett) -> (le(n,z64157) & (-(h = z64157) -> -le(n,z64157)))) | exists z64158.(char(z64158,letu) & le(n,z64158))))"
+        ]
+    },
+    {
+        "root_id": "legend-b-5",
+        "transcript_ids": [
+            "legend-b-5-1",
+            "legend-b-5-2",
+            "legend-b-5-4"
+        ],
+        "formulas": [
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & exists z65164.(exists c.char(z65164,c) & exists d.(adj(z65164,d) & le(z65164,d) & -exists z65163.le(d,z65163)) & exists c.char(z65164,c) & le(z65164,n)))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & exists z65179.(exists c.char(z65179,c) & exists d.(adj(z65179,d) & le(z65179,d) & -exists z65178.le(d,z65178)) & exists c.char(z65179,c) & le(z65179,n)))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & exists h.all z65206.((exists c.char(z65206,c) & exists d.(adj(z65206,d) & le(z65206,d) & -exists z65205.le(d,z65205)) & exists c.char(z65206,c)) -> (le(z65206,n) & (-(h = z65206) -> -le(z65206,n)))))"
+        ]
+    },
+    {
+        "root_id": "legend-c-3",
+        "transcript_ids": [
+            "legend-c-3-50"
+        ],
+        "formulas": [
+            "all n.((exists c.(vowel(c) & char(n,c)) & exists c.char(n,c) & le(\\z65730.(exists m c.(char(z65730,c) & char(m,c) & (le(m,z65730) | le(z65730,m))) & exists c.(vowel(c) & char(z65730,c))),n)) -> (all z65755.(char(z65755,leti) -> -le(z65755,n)) & all z65756.(char(z65756,letk) -> -le(z65756,n))))"
+        ]
+    },
+    {
+        "root_id": "legend-c-5",
+        "transcript_ids": [
+            "legend-c-5-1",
+            "legend-c-5-7",
+            "legend-c-5-8",
+            "legend-c-5-28"
+        ],
+        "formulas": [
+            "(-\\n.ad(n,3)(5) | exists z68794 z68795.(char(z68795,lett) & le(z68795,5) & char(z68794,lett) & le(z68794,5) & -(z68794 = z68795)))",
+            "exists h.all n.(5(n) -> ((-\\n.ad(n,3)(n) | exists z68828 z68829.(char(z68829,lett) & le(z68829,n) & char(z68828,lett) & le(z68828,n) & -(z68828 = z68829))) & (-(h = n) -> -(-\\n.ad(n,3)(n) | exists z68828 z68829.(char(z68829,lett) & le(z68829,n) & char(z68828,lett) & le(z68828,n) & -(z68828 = z68829))))))",
+            "(3(\\z68843.-\\z68834.ad(z68834,z68843)(5)) | exists z68840 z68844.(char(z68844,lett) & le(z68844,5) & char(z68840,lett) & le(z68840,5) & -(z68840 = z68844)))",
+            "exists h.all n.(5(n) -> ((3(\\z68977.-\\z68958.ad(z68958,z68977)(n)) | exists z68974 z68978.(char(z68978,lett) & le(z68978,n) & char(z68974,lett) & le(z68974,n) & -(z68974 = z68978))) & (-(h = n) -> -(3(\\z68977.-\\z68958.ad(z68958,z68977)(n)) | exists z68974 z68978.(char(z68978,lett) & le(z68978,n) & char(z68974,lett) & le(z68974,n) & -(z68974 = z68978))))))"
+        ]
+    },
+    {
+        "root_id": "levi-a-1",
+        "transcript_ids": [
+            "levi-a-1-2"
+        ],
+        "formulas": [
+            "exists m n.(exists c.char(n,c) & le(2,n) & exists c.char(m,c) & le(2,m) & -(m = n))"
+        ]
+    },
+    {
+        "root_id": "levi-a-10",
+        "transcript_ids": [
+            "levi-a-10-10"
+        ],
+        "formulas": [
+            "exists n.(exists c.(capital(c) & char(n,c)) & exists c.char(n,c) & exists c.-voiced(n,c))"
+        ]
+    },
+    {
+        "root_id": "levi-a-2",
+        "transcript_ids": [
+            "levi-a-2-1",
+            "levi-a-2-2"
+        ],
+        "formulas": [
+            "all n.((capital(c2) & exists c.char(n,c)) -> exists c.(vowel(c) & char(n,c)))",
+            "all n.((capital(c2) & exists c.char(n,c)) -> exists h.all z69221.(exists c.(vowel(c) & char(z69221,c)) -> (n(z69221) & (-(h = z69221) -> -n(z69221)))))"
+        ]
+    },
+    {
+        "root_id": "levi-a-3",
+        "transcript_ids": [
+            "levi-a-3-1"
+        ],
+        "formulas": [
+            "all n.(exists c.char(n,c) -> exists c.(cent(n) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "levi-a-4",
+        "transcript_ids": [
+            "levi-a-4-1"
+        ],
+        "formulas": [
+            "all n.(-3(n) -> -exists c.(cent(n) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "levi-a-6",
+        "transcript_ids": [
+            "levi-a-6-1"
+        ],
+        "formulas": [
+            "exists m n.(exists c.(-vowel(c) & char(n,c)) & exists c.char(n,c) & exists c.(-vowel(c) & char(m,c)) & exists c.char(m,c) & -(m = n))"
+        ]
+    },
+    {
+        "root_id": "levi-a-7",
+        "transcript_ids": [
+            "levi-a-7-1"
+        ],
+        "formulas": [
+            "all n.(exists c.(vowel(c) & char(n,c)) -> -(exists c.(ad(2,n) & char(2,c)) & le(2,n)))"
+        ]
+    },
+    {
+        "root_id": "levi-a-8",
+        "transcript_ids": [
+            "levi-a-8-1"
+        ],
+        "formulas": [
+            "-all c m.((char(m,c) & char(1,c)) -> (m = 1))"
+        ]
+    },
+    {
+        "root_id": "levi-a-9",
+        "transcript_ids": [
+            "levi-a-9-1",
+            "levi-a-9-4",
+            "levi-a-9-27",
+            "levi-a-9-34",
+            "levi-a-9-43",
+            "levi-a-9-108"
+        ],
+        "formulas": [
+            "exists n.(exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))) & exists c.char(n,c) & exists c.(vowel(c) & char(n,c)))",
+            "exists n.(exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))) & exists c.char(n,c) & exists h.all z69234.(exists c.(vowel(c) & char(z69234,c)) -> (n(z69234) & (-(h = z69234) -> -n(z69234)))))",
+            "exists h.all n.((exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))) & exists c.char(n,c)) -> (exists c.(vowel(c) & char(n,c)) & (-(h = n) -> -exists c.(vowel(c) & char(n,c)))))",
+            "exists h.all n.((exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))) & exists c.char(n,c)) -> (exists h.all z69236.(exists c.(vowel(c) & char(z69236,c)) -> (n(z69236) & (-(h = z69236) -> -n(z69236)))) & (-(h = n) -> -exists h.all z69237.(exists c.(vowel(c) & char(z69237,c)) -> (n(z69237) & (-(h = z69237) -> -n(z69237)))))))",
+            "exists n.(exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))) & exists c.char(n,c) & exists c.(vowel(c) & char(n,c)))",
+            "exists h.all n.((exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))) & exists c.char(n,c)) -> (exists c.(vowel(c) & char(n,c)) & (-(h = n) -> -exists c.(vowel(c) & char(n,c)))))"
+        ]
+    },
+    {
+        "root_id": "levi-b-3",
+        "transcript_ids": [
+            "levi-b-3-1"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> -exists z69241.(exists c.(vowel(c) & char(z69241,c)) & le(n,z69241)))"
+        ]
+    },
+    {
+        "root_id": "levi-b-4",
+        "transcript_ids": [
+            "levi-b-4-55",
+            "levi-b-4-60",
+            "levi-b-4-191"
+        ],
+        "formulas": [
+            "((-exists c.(char(5,c) & char(5,c)) & exists n.(5(n) & all c m.((char(m,c) & char(n,c)) -> (m = n)))) | (exists c.(char(5,c) & char(5,c)) & -exists n.(5(n) & all c m.((char(m,c) & char(n,c)) -> (m = n)))))",
+            "((-exists c.(char(5,c) & char(5,c)) & all c m.((char(m,c) & char(5,c)) -> (m = 5))) | (exists c.(char(5,c) & char(5,c)) & -all c m.((char(m,c) & char(5,c)) -> (m = 5))))",
+            "((-exists c.(char(5,c) & char(5,c)) & exists h.all n.(5(n) -> (all c m.((char(m,c) & char(n,c)) -> (m = n)) & (-(h = n) -> -all c m.((char(m,c) & char(n,c)) -> (m = n)))))) | (exists c.(char(5,c) & char(5,c)) & -exists h.all n.(5(n) -> (all c m.((char(m,c) & char(n,c)) -> (m = n)) & (-(h = n) -> -all c m.((char(m,c) & char(n,c)) -> (m = n)))))))"
+        ]
+    },
+    {
+        "root_id": "levi-c-1",
+        "transcript_ids": [
+            "levi-c-1-12",
+            "levi-c-1-27"
+        ],
+        "formulas": [
+            "all n.((exists c.(vowel(c) & char(n,c)) & le(1,n)) -> exists h.all z69713.((exists c.-voiced(z69713,c) & exists c.(cent(z69713) & char(z69713,c)) & exists c.(char(z69713,c) & even(z69713)) & exists c.(glide(c) & char(z69713,c))) -> (le(n,z69713) & (-(h = z69713) -> -le(n,z69713)))))",
+            "all n.((exists c.(vowel(c) & char(n,c)) & le(1,n)) -> exists h.all z69767.((exists c.-voiced(z69767,c) & exists c.(cent(z69767) & char(z69767,c)) & exists c.(char(z69767,c) & even(z69767)) & exists c.(glide(c) & char(z69767,c))) -> (le(n,z69767) & (-(h = z69767) -> -le(n,z69767)))))"
+        ]
+    },
+    {
+        "root_id": "levi-c-3",
+        "transcript_ids": [
+            "levi-c-3-29",
+            "levi-c-3-77",
+            "levi-c-3-87",
+            "levi-c-3-137",
+            "levi-c-3-182",
+            "levi-c-3-185",
+            "levi-c-3-193",
+            "levi-c-3-211",
+            "levi-c-3-215"
+        ],
+        "formulas": [
+            "(exists h.all m.(char(\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c))),h) & (-(m = \\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) -> (le(\\n.(exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))),\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) & -le(\\n.(exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))),m)))) & all n.(exists c.(glide(c) & char(n,c)) -> -(exists c.(ad(\\z69885.(exists c.(char(z69885,c) & odd(z69885)) & char(z69885,letp)),n) & char(\\z69886.(exists c.(char(z69886,c) & odd(z69886)) & char(z69886,letp)),c)) & le(\\z69887.(exists c.(char(z69887,c) & odd(z69887)) & char(z69887,letp)),n))))",
+            "(exists h.all m.(char(\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c))),h) & (-(m = \\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) -> (le(\\n.(exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))),\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) & -le(\\n.(exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))),m)))) & all n.(exists c.(glide(c) & char(n,c)) -> -all z69997.(char(z69997,letp) -> le(z69997,n))))",
+            "(exists h.all m.(char(\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c))),h) & (-(m = \\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) -> (le(\\n.(exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))),\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) & -le(\\n.(exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))),m)))) & all n.(exists c.(glide(c) & char(n,c)) -> -exists z70047.(char(z70047,letp) & le(z70047,n))))",
+            "(exists h.all m.(char(\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c))),h) & (-(m = \\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) -> (le(\\n.(exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))),\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) & -le(\\n.(exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))),m)))) & all n.(exists c.(glide(c) & char(n,c)) -> -(exists c.(ad(\\z70205.(exists c.(char(z70205,c) & odd(z70205)) & char(z70205,letp)),n) & char(\\z70206.(exists c.(char(z70206,c) & odd(z70206)) & char(z70206,letp)),c)) & le(\\z70207.(exists c.(char(z70207,c) & odd(z70207)) & char(z70207,letp)),n))))",
+            "(exists h.all m.(char(\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c))),h) & (-(m = \\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) -> (exists h.all n.((exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))) -> (le(n,\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) & (-(h = n) -> -le(n,\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c))))))) & -exists h.all n.((exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))) -> (le(n,m) & (-(h = n) -> -le(n,m))))))) & all n.(exists c.(glide(c) & char(n,c)) -> -(exists c.(ad(\\z70605.(exists c.(char(z70605,c) & odd(z70605)) & char(z70605,letp)),n) & char(\\z70606.(exists c.(char(z70606,c) & odd(z70606)) & char(z70606,letp)),c)) & le(\\z70607.(exists c.(char(z70607,c) & odd(z70607)) & char(z70607,letp)),n))))",
+            "(exists h.all m.(char(\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c))),h) & (-(m = \\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) -> (le(\\n.(exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))),\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) & -le(\\n.(exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))),m)))) & all n.(exists c.(glide(c) & char(n,c)) -> -all z70629.(char(z70629,letp) -> le(z70629,n))))",
+            "(exists h.all m.(char(\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c))),h) & (-(m = \\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) -> (le(\\n.(exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))),\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) & -le(\\n.(exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))),m)))) & all n.(exists c.(glide(c) & char(n,c)) -> -exists z70719.(char(z70719,letp) & le(z70719,n))))",
+            "(exists h.all m.(char(\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c))),h) & (-(m = \\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) -> (exists h.all n.((exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))) -> (le(n,\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) & (-(h = n) -> -le(n,\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c))))))) & -exists h.all n.((exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))) -> (le(n,m) & (-(h = n) -> -le(n,m))))))) & all n.(exists c.(glide(c) & char(n,c)) -> -all z70963.(char(z70963,letp) -> le(z70963,n))))",
+            "(exists h.all m.(char(\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c))),h) & (-(m = \\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) -> (exists h.all n.((exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))) -> (le(n,\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c)))) & (-(h = n) -> -le(n,\\x.(exists c.(cent(x) & char(x,c)) & exists c.(vowel(c) & char(x,c))))))) & -exists h.all n.((exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c))) -> (le(n,m) & (-(h = n) -> -le(n,m))))))) & all n.(exists c.(glide(c) & char(n,c)) -> -exists z71037.(char(z71037,letp) & le(z71037,n))))"
+        ]
+    },
+    {
+        "root_id": "levi-c-5",
+        "transcript_ids": [
+            "levi-c-5-1",
+            "levi-c-5-2"
+        ],
+        "formulas": [
+            "exists n.(exists c.(glide(c) & char(n,c)) & exists z72337.(char(z72337,letd) & le(n,z72337)) & exists z72342 z72338.(char(z72338,letu) & le(n,z72338) & char(z72342,letu) & le(n,z72342) & -(z72342 = z72338)) & exists c.char(n,c))",
+            "exists n.(exists c.(glide(c) & char(n,c)) & exists z72363.(char(z72363,lett) & le(n,z72363)) & exists z72368 z72364.(char(z72364,letu) & le(n,z72364) & char(z72368,letu) & le(n,z72368) & -(z72368 = z72364)) & exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "mateo-a-1",
+        "transcript_ids": [
+            "mateo-a-1-1",
+            "mateo-a-1-2",
+            "mateo-a-1-3",
+            "mateo-a-1-4"
+        ],
+        "formulas": [
+            "all n.((exists c.char(n,c) & exists z72585.(char(z72585,lett) & le(n,z72585))) -> exists h.all z72586.(char(z72586,letu) -> (le(n,z72586) & (-(h = z72586) -> -le(n,z72586)))))",
+            "all n.((exists c.char(n,c) & exists h.all z72599.(char(z72599,lett) -> (le(n,z72599) & (-(h = z72599) -> -le(n,z72599))))) -> exists h.all z72600.(char(z72600,letu) -> (le(n,z72600) & (-(h = z72600) -> -le(n,z72600)))))",
+            "all n.((exists c.char(n,c) & exists z72609.(char(z72609,lett) & le(n,z72609))) -> exists z72610.(char(z72610,letu) & le(n,z72610)))",
+            "all n.((exists c.char(n,c) & exists h.all z72623.(char(z72623,lett) -> (le(n,z72623) & (-(h = z72623) -> -le(n,z72623))))) -> exists z72624.(char(z72624,letu) & le(n,z72624)))"
+        ]
+    },
+    {
+        "root_id": "mateo-a-2",
+        "transcript_ids": [
+            "mateo-a-2-1",
+            "mateo-a-2-3",
+            "mateo-a-2-9",
+            "mateo-a-2-10"
+        ],
+        "formulas": [
+            "exists n.(exists c.char(n,c) & exists z72629.(char(z72629,letd) & le(n,z72629)) & exists c.char(n,c) & all m.((exists c.char(m,c) & exists n.(char(n,letd) & le(m,n)) & exists c.char(m,c)) -> eq(m,n)))",
+            "exists n.(exists c.char(n,c) & exists h.all z72641.(char(z72641,letd) -> (le(n,z72641) & (-(h = z72641) -> -le(n,z72641)))) & exists c.char(n,c) & all m.((exists c.char(m,c) & exists h.all n.(char(n,letd) -> (le(m,n) & (-(h = n) -> -le(m,n)))) & exists c.char(m,c)) -> eq(m,n)))",
+            "exists n.(exists c.char(n,c) & exists z72669.(char(z72669,lett) & le(n,z72669)) & exists c.char(n,c) & all m.((exists c.char(m,c) & exists n.(char(n,lett) & le(m,n)) & exists c.char(m,c)) -> eq(m,n)))",
+            "exists n.(exists c.char(n,c) & exists h.all z72675.(char(z72675,lett) -> (le(n,z72675) & (-(h = z72675) -> -le(n,z72675)))) & exists c.char(n,c) & all m.((exists c.char(m,c) & exists h.all n.(char(n,lett) -> (le(m,n) & (-(h = n) -> -le(m,n)))) & exists c.char(m,c)) -> eq(m,n)))"
+        ]
+    },
+    {
+        "root_id": "mateo-a-3",
+        "transcript_ids": [
+            "mateo-a-3-3",
+            "mateo-a-3-11",
+            "mateo-a-3-12",
+            "mateo-a-3-23",
+            "mateo-a-3-24",
+            "mateo-a-3-31"
+        ],
+        "formulas": [
+            "exists n.(char(n,lett) & exists h.all z72751.(char(z72751,letu) -> (le(z72751,n) & (-(h = z72751) -> -le(z72751,n)))) & exists z72752.(char(z72752,letd) & le(n,z72752)))",
+            "exists n.(char(n,lett) & exists h.all z72883.(char(z72883,letu) -> (le(z72883,n) & (-(h = z72883) -> -le(z72883,n)))) & exists h.all z72884.(char(z72884,letd) -> (le(n,z72884) & (-(h = z72884) -> -le(n,z72884)))))",
+            "exists n.(char(n,lett) & exists z72912.(char(z72912,letu) & le(z72912,n)) & exists z72913.(char(z72913,letd) & le(n,z72913)))",
+            "exists n.(char(n,lett) & exists z73060.(char(z73060,letu) & le(z73060,n)) & exists h.all z73061.(char(z73061,letd) -> (le(n,z73061) & (-(h = z73061) -> -le(n,z73061)))))",
+            "exists n.(char(n,lett) & exists h.all z73086.(char(z73086,letu) -> (le(z73086,n) & (-(h = z73086) -> -le(z73086,n)))) & exists z73087.(char(z73087,lett) & le(n,z73087)))",
+            "exists n.(char(n,lett) & exists z73188.(char(z73188,letu) & le(z73188,n)) & exists z73189.(char(z73189,lett) & le(n,z73189)))"
+        ]
+    },
+    {
+        "root_id": "mateo-a-5",
+        "transcript_ids": [
+            "mateo-a-5-1",
+            "mateo-a-5-2"
+        ],
+        "formulas": [
+            "-exists c d.(le(1,d) & char(1,c))",
+            "exists h.all n.(1(n) -> (-exists c d.(le(n,d) & char(n,c)) & (-(h = n) -> --exists c d.(le(n,d) & char(n,c)))))"
+        ]
+    },
+    {
+        "root_id": "mateo-a-6",
+        "transcript_ids": [
+            "mateo-a-6-9",
+            "mateo-a-6-11",
+            "mateo-a-6-33",
+            "mateo-a-6-35"
+        ],
+        "formulas": [
+            "all n.((exists c.char(n,c) & le(n,\\z73219.char(z73219,lett))) -> exists h.all z73222.(char(z73222,lett) -> (le(z73222,n) & (-(h = z73222) -> -le(z73222,n)))))",
+            "all n.((exists c.char(n,c) & le(n,\\z73229.char(z73229,lett))) -> exists z73232.(char(z73232,lett) & le(z73232,n)))",
+            "all n.((exists c.char(n,c) & le(n,\\z73259.char(z73259,lett))) -> exists h.all z73262.(char(z73262,lett) -> (le(z73262,n) & (-(h = z73262) -> -le(z73262,n)))))",
+            "all n.((exists c.char(n,c) & le(n,\\z73269.char(z73269,lett))) -> exists z73272.(char(z73272,lett) & le(z73272,n)))"
+        ]
+    },
+    {
+        "root_id": "mateo-a-7",
+        "transcript_ids": [
+            "mateo-a-7-3",
+            "mateo-a-7-8"
+        ],
+        "formulas": [
+            "all n.((exists c.(capital(c) & char(n,c)) & char(n,letu)) -> -exists c.char(n,c))",
+            "exists c.(-exists z73292.(capital(z73292) & char(c,z73292)) & char(c,letu))"
+        ]
+    },
+    {
+        "root_id": "mateo-a-8",
+        "transcript_ids": [
+            "mateo-a-8-2",
+            "mateo-a-8-3"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> -exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))))",
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> -exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))))"
+        ]
+    },
+    {
+        "root_id": "mateo-a-9",
+        "transcript_ids": [
+            "mateo-a-9-1",
+            "mateo-a-9-33",
+            "mateo-a-9-37",
+            "mateo-a-9-46"
+        ],
+        "formulas": [
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & exists z73311.(exists z73310 c.(char(z73311,c) & char(z73310,c) & (le(z73310,z73311) | le(z73311,z73310))) & exists c.(vowel(c) & char(z73311,c)) & ad(n,z73311)))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & exists h.all z73382.((exists z73381 c.(char(z73382,c) & char(z73381,c) & (le(z73381,z73382) | le(z73382,z73381))) & exists c.(vowel(c) & char(z73382,c))) -> (ad(n,z73382) & (-(h = z73382) -> -ad(n,z73382)))))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & ad(n,\\n.(exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))) & exists c.(vowel(c) & char(n,c)))))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & ad(n,\\n.(exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))) & exists c.(vowel(c) & char(n,c)))))"
+        ]
+    },
+    {
+        "root_id": "mia-a-1",
+        "transcript_ids": [
+            "mia-a-1-8"
+        ],
+        "formulas": [
+            "all n.(exists c.char(n,c) -> exists c.voiced(n,c))"
+        ]
+    },
+    {
+        "root_id": "mia-a-3",
+        "transcript_ids": [
+            "mia-a-3-2"
+        ],
+        "formulas": [
+            "exists n.(exists c.(glide(c) & char(n,c)) & exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))))"
+        ]
+    },
+    {
+        "root_id": "mia-a-7",
+        "transcript_ids": [
+            "mia-a-7-3"
+        ],
+        "formulas": [
+            "(exists c.(cent(4) & char(4,c)) & exists c.-voiced(4,c))"
+        ]
+    },
+    {
+        "root_id": "mia-b-3",
+        "transcript_ids": [
+            "mia-b-3-36"
+        ],
+        "formulas": [
+            "exists n.(exists c.(glide(c) & char(n,c)) & exists c.(cent(n) & char(n,c)) & exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "mia-c-5",
+        "transcript_ids": [
+            "mia-c-5-103",
+            "mia-c-5-181",
+            "mia-c-5-198",
+            "mia-c-5-316",
+            "mia-c-5-333",
+            "mia-c-5-336"
+        ],
+        "formulas": [
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & (exists z77709.(exists c.(glide(c) & char(z77709,c)) & le(n,z77709)) | exists z77710.(char(z77710,lete) & le(n,z77710))))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & (exists z78227.(exists c.(glide(c) & char(z78227,c)) & le(n,z78227)) | exists z78228.(char(z78228,letp) & le(n,z78228))))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & (exists z78347.(exists c.(glide(c) & char(z78347,c)) & le(n,z78347)) | exists z78348.(char(z78348,lett) & le(n,z78348))))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & (exists z79149.(exists c.(glide(c) & char(z79149,c)) & le(n,z79149)) | exists z79150.(char(z79150,lete) & le(n,z79150))))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & (exists z79309.(exists c.(glide(c) & char(z79309,c)) & le(n,z79309)) | exists z79310.(char(z79310,letp) & le(n,z79310))))",
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & (exists z79341.(exists c.(glide(c) & char(z79341,c)) & le(n,z79341)) | exists z79342.(char(z79342,lett) & le(n,z79342))))"
+        ]
+    },
+    {
+        "root_id": "mufasa-a-1",
+        "transcript_ids": [
+            "mufasa-a-1-25",
+            "mufasa-a-1-126",
+            "mufasa-a-1-280"
+        ],
+        "formulas": [
+            "exists m n.(exists c.(vowel(c) & char(n,c)) & exists z79352.(exists c.(-vowel(c) & char(z79352,c)) & le(n,z79352)) & exists c.(vowel(c) & char(m,c)) & exists n.(exists c.(-vowel(c) & char(n,c)) & le(m,n)) & -(m = n))",
+            "exists m n.(exists c.(vowel(c) & char(n,c)) & exists h.all z79376.(exists c.(-vowel(c) & char(z79376,c)) -> (le(n,z79376) & (-(h = z79376) -> -le(n,z79376)))) & exists c.(vowel(c) & char(m,c)) & exists h.all n.(exists c.(-vowel(c) & char(n,c)) -> (le(m,n) & (-(h = n) -> -le(m,n)))) & -(m = n))",
+            "exists m n.(exists c.(vowel(c) & char(n,c)) & all z79400.(exists c.(-vowel(c) & char(z79400,c)) -> le(n,z79400)) & exists c.(vowel(c) & char(m,c)) & all n.(exists c.(-vowel(c) & char(n,c)) -> le(m,n)) & -(m = n))"
+        ]
+    },
+    {
+        "root_id": "mufasa-a-2",
+        "transcript_ids": [
+            "mufasa-a-2-12"
+        ],
+        "formulas": [
+            "all n.((exists c.-voiced(n,c) & exists c.char(n,c)) -> exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))))"
+        ]
+    },
+    {
+        "root_id": "mufasa-a-3",
+        "transcript_ids": [
+            "mufasa-a-3-31"
+        ],
+        "formulas": [
+            "all n.(-(exists c.(capital(c) & char(n,c)) & exists c.char(n,c)) -> --exists c d.(le(n,d) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "mufasa-a-4",
+        "transcript_ids": [
+            "mufasa-a-4-1"
+        ],
+        "formulas": [
+            "exists n.(exists c.(vowel(c) & char(n,c)) & exists c.(capital(c) & char(n,c)) & exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "mufasa-a-5",
+        "transcript_ids": [
+            "mufasa-a-5-50",
+            "mufasa-a-5-66"
+        ],
+        "formulas": [
+            "(exists z79507.(exists c.(vowel(c) & char(z79507,c)) & le(z79507,3)) | exists z79508.(exists c.(capital(c) & char(z79508,c)) & exists c.char(z79508,c) & le(z79508,3)))",
+            "exists h.all n.(3(n) -> ((exists z79526.(exists c.(vowel(c) & char(z79526,c)) & le(z79526,n)) | exists z79527.(exists c.(capital(c) & char(z79527,c)) & exists c.char(z79527,c) & le(z79527,n))) & (-(h = n) -> -(exists z79526.(exists c.(vowel(c) & char(z79526,c)) & le(z79526,n)) | exists z79527.(exists c.(capital(c) & char(z79527,c)) & exists c.char(z79527,c) & le(z79527,n))))))"
+        ]
+    },
+    {
+        "root_id": "mufasa-a-6",
+        "transcript_ids": [
+            "mufasa-a-6-13",
+            "mufasa-a-6-17"
+        ],
+        "formulas": [
+            "all n.(char(n,leti) -> -(exists c.(ad(4,n) & char(4,c)) & le(n,4)))",
+            "all n.(char(n,leti) -> -exists h.all z79571.(4(z79571) -> (le(n,z79571) & (-(h = z79571) -> -le(n,z79571)))))"
+        ]
+    },
+    {
+        "root_id": "mufasa-a-9",
+        "transcript_ids": [
+            "mufasa-a-9-32"
+        ],
+        "formulas": [
+            "all n.((exists c.-voiced(n,c) & exists c.char(n,c)) -> exists c.(char(n,c) & odd(n)))"
+        ]
+    },
+    {
+        "root_id": "mufasa-b-1",
+        "transcript_ids": [
+            "mufasa-b-1-1",
+            "mufasa-b-1-11",
+            "mufasa-b-1-15",
+            "mufasa-b-1-35",
+            "mufasa-b-1-39",
+            "mufasa-b-1-67"
+        ],
+        "formulas": [
+            "all n.(exists c.char(n,c) -> -(char(n,letp) & exists c.(char(n,c) & odd(n)) & char(n,lete) & exists z79586.(char(z79586,lete) & n(z79586))))",
+            "all n.(exists c.char(n,c) -> -(char(n,letp) & exists c.(char(n,c) & odd(n)) & char(n,lete) & char(n,lete)))",
+            "all n.(exists c.char(n,c) -> -(exists z79609.(char(z79609,letp) & n(z79609)) & exists c.(char(n,c) & odd(n)) & char(n,lete) & exists z79614.(char(z79614,lete) & n(z79614))))",
+            "all n.(exists c.char(n,c) -> -(char(n,letp) & exists c.(char(n,c) & odd(n)) & char(n,lete) & char(n,letp)))",
+            "all n.(exists c.char(n,c) -> -(exists z79676.(char(z79676,letp) & n(z79676)) & exists c.(char(n,c) & odd(n)) & char(n,lete) & char(n,lete)))",
+            "all n.(exists c.char(n,c) -> -(exists z79726.(char(z79726,letp) & n(z79726)) & exists c.(char(n,c) & odd(n)) & char(n,lete) & char(n,letp)))"
+        ]
+    },
+    {
+        "root_id": "mufasa-b-2",
+        "transcript_ids": [
+            "mufasa-b-2-1"
+        ],
+        "formulas": [
+            "exists m n.(exists c.(glide(c) & char(n,c)) & le(n,3) & exists c.(glide(c) & char(m,c)) & le(m,3) & -(m = n))"
+        ]
+    },
+    {
+        "root_id": "mufasa-b-3",
+        "transcript_ids": [
+            "mufasa-b-3-16"
+        ],
+        "formulas": [
+            "((-exists c.(char(3,c) & char(2,c)) & exists c.(char(2,c) & char(4,c))) | (exists c.(char(3,c) & char(2,c)) & -exists c.(char(2,c) & char(4,c))))"
+        ]
+    },
+    {
+        "root_id": "mufasa-b-5",
+        "transcript_ids": [
+            "mufasa-b-5-1"
+        ],
+        "formulas": [
+            "all n.(char(n,letu) -> (exists c.(capital(c) & char(n,c)) & exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m)))))"
+        ]
+    },
+    {
+        "root_id": "mufasa-c-2",
+        "transcript_ids": [
+            "mufasa-c-2-2",
+            "mufasa-c-2-6",
+            "mufasa-c-2-24",
+            "mufasa-c-2-26",
+            "mufasa-c-2-42",
+            "mufasa-c-2-48",
+            "mufasa-c-2-115",
+            "mufasa-c-2-154"
+        ],
+        "formulas": [
+            "exists n.(exists c.(cent(n) & char(n,c)) & exists c.(-vowel(c) & char(n,c)) & exists c.(glide(c) & char(n,c)) & all z79826.(exists c.(-vowel(c) & char(z79826,c)) -> -le(z79826,n)) & le(n,5))",
+            "exists n.(exists c.(cent(n) & char(n,c)) & exists c.(-vowel(c) & char(n,c)) & exists h.all z79864.(exists c.(glide(c) & char(z79864,c)) -> (n(z79864) & (-(h = z79864) -> -n(z79864)))) & all z79862.(exists c.(-vowel(c) & char(z79862,c)) -> -le(z79862,n)) & le(n,5))",
+            "exists h.all n.((exists c.(cent(n) & char(n,c)) & exists c.(-vowel(c) & char(n,c)) & exists c.(glide(c) & char(n,c))) -> (all z79952.(exists c.(-vowel(c) & char(z79952,c)) -> -le(z79952,n)) & le(n,5) & (-(h = n) -> -(all z79952.(exists c.(-vowel(c) & char(z79952,c)) -> -le(z79952,n)) & le(n,5)))))",
+            "exists n.(exists c.(cent(n) & char(n,c)) & exists c.(-vowel(c) & char(n,c)) & exists c.(glide(c) & char(n,c)) & all z79982.(exists c.(-vowel(c) & char(z79982,c)) -> -le(z79982,n)) & exists h.all z79983.(5(z79983) -> (le(n,z79983) & (-(h = z79983) -> -le(n,z79983)))))",
+            "exists h.all n.((exists c.(cent(n) & char(n,c)) & exists c.(-vowel(c) & char(n,c)) & exists h.all z80075.(exists c.(glide(c) & char(z80075,c)) -> (n(z80075) & (-(h = z80075) -> -n(z80075))))) -> (all z80073.(exists c.(-vowel(c) & char(z80073,c)) -> -le(z80073,n)) & le(n,5) & (-(h = n) -> -(all z80073.(exists c.(-vowel(c) & char(z80073,c)) -> -le(z80073,n)) & le(n,5)))))",
+            "exists n.(exists c.(cent(n) & char(n,c)) & exists c.(-vowel(c) & char(n,c)) & exists h.all z80152.(exists c.(glide(c) & char(z80152,c)) -> (n(z80152) & (-(h = z80152) -> -n(z80152)))) & all z80144.(exists c.(-vowel(c) & char(z80144,c)) -> -le(z80144,n)) & exists h.all z80145.(5(z80145) -> (le(n,z80145) & (-(h = z80145) -> -le(n,z80145)))))",
+            "exists h.all n.((exists c.(cent(n) & char(n,c)) & exists c.(-vowel(c) & char(n,c)) & exists c.(glide(c) & char(n,c))) -> (all z80481.(exists c.(-vowel(c) & char(z80481,c)) -> -le(z80481,n)) & exists h.all z80482.(5(z80482) -> (le(n,z80482) & (-(h = z80482) -> -le(n,z80482)))) & (-(h = n) -> -(all z80481.(exists c.(-vowel(c) & char(z80481,c)) -> -le(z80481,n)) & exists h.all z80482.(5(z80482) -> (le(n,z80482) & (-(h = z80482) -> -le(n,z80482))))))))",
+            "exists h.all n.((exists c.(cent(n) & char(n,c)) & exists c.(-vowel(c) & char(n,c)) & exists h.all z80715.(exists c.(glide(c) & char(z80715,c)) -> (n(z80715) & (-(h = z80715) -> -n(z80715))))) -> (all z80707.(exists c.(-vowel(c) & char(z80707,c)) -> -le(z80707,n)) & exists h.all z80708.(5(z80708) -> (le(n,z80708) & (-(h = z80708) -> -le(n,z80708)))) & (-(h = n) -> -(all z80707.(exists c.(-vowel(c) & char(z80707,c)) -> -le(z80707,n)) & exists h.all z80708.(5(z80708) -> (le(n,z80708) & (-(h = z80708) -> -le(n,z80708))))))))"
+        ]
+    },
+    {
+        "root_id": "muhammad-a-1",
+        "transcript_ids": [
+            "muhammad-a-1-1",
+            "muhammad-a-1-3",
+            "muhammad-a-1-4"
+        ],
+        "formulas": [
+            "exists c.(cent(1) & char(1,c))",
+            "exists h.all n.(1(n) -> (exists c.(cent(n) & char(n,c)) & (-(h = n) -> -exists c.(cent(n) & char(n,c)))))",
+            "exists n.(1(n) & exists c.(cent(n) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "muhammad-a-10",
+        "transcript_ids": [
+            "muhammad-a-10-669",
+            "muhammad-a-10-737",
+            "muhammad-a-10-755",
+            "muhammad-a-10-786",
+            "muhammad-a-10-787",
+            "muhammad-a-10-796"
+        ],
+        "formulas": [
+            "(exists h.all n.(1(n) -> (exists c.(capital(c) & char(n,c)) & (-(h = n) -> -exists c.(capital(c) & char(n,c))))) | exists c.(capital(c) & char(2,c)))",
+            "(exists h.all n.(1(n) -> (exists c.(capital(c) & char(n,c)) & (-(h = n) -> -exists c.(capital(c) & char(n,c))))) | exists n.(2(n) & exists c.(capital(c) & char(n,c))))",
+            "(exists c.(capital(c) & char(1,c)) | exists c.(capital(c) & char(2,c)))",
+            "(exists n.(1(n) & exists c.(capital(c) & char(n,c))) | exists c.(capital(c) & char(2,c)))",
+            "(exists c.(capital(c) & char(1,c)) | exists n.(2(n) & exists c.(capital(c) & char(n,c))))",
+            "(exists n.(1(n) & exists c.(capital(c) & char(n,c))) | exists n.(2(n) & exists c.(capital(c) & char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "muhammad-a-2",
+        "transcript_ids": [
+            "muhammad-a-2-1"
+        ],
+        "formulas": [
+            "all n.(exists c.char(n,c) -> exists c.(char(n,c) & mirrored(n)))"
+        ]
+    },
+    {
+        "root_id": "muhammad-a-3",
+        "transcript_ids": [
+            "muhammad-a-3-7"
+        ],
+        "formulas": [
+            "all n.(-exists c.(vowel(c) & char(n,c)) -> -exists c.(capital(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "muhammad-a-4",
+        "transcript_ids": [
+            "muhammad-a-4-2",
+            "muhammad-a-4-5",
+            "muhammad-a-4-13",
+            "muhammad-a-4-19"
+        ],
+        "formulas": [
+            "((-exists c.(capital(c) & char(2,c)) & exists c.(-vowel(c) & char(4,c))) | (exists c.(capital(c) & char(2,c)) & -exists c.(-vowel(c) & char(4,c))))",
+            "((-exists c.(capital(c) & char(2,c)) & exists n.(4(n) & exists c.(-vowel(c) & char(n,c)))) | (exists c.(capital(c) & char(2,c)) & -exists n.(4(n) & exists c.(-vowel(c) & char(n,c)))))",
+            "((-exists h.all n.(2(n) -> (exists c.(capital(c) & char(n,c)) & (-(h = n) -> -exists c.(capital(c) & char(n,c))))) & exists c.(-vowel(c) & char(4,c))) | (exists h.all n.(2(n) -> (exists c.(capital(c) & char(n,c)) & (-(h = n) -> -exists c.(capital(c) & char(n,c))))) & -exists c.(-vowel(c) & char(4,c))))",
+            "((-exists h.all n.(2(n) -> (exists c.(capital(c) & char(n,c)) & (-(h = n) -> -exists c.(capital(c) & char(n,c))))) & exists n.(4(n) & exists c.(-vowel(c) & char(n,c)))) | (exists h.all n.(2(n) -> (exists c.(capital(c) & char(n,c)) & (-(h = n) -> -exists c.(capital(c) & char(n,c))))) & -exists n.(4(n) & exists c.(-vowel(c) & char(n,c)))))"
+        ]
+    },
+    {
+        "root_id": "muhammad-a-5",
+        "transcript_ids": [
+            "muhammad-a-5-1",
+            "muhammad-a-5-2"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.(capital(c) & char(n,c)))",
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.(capital(c) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "muhammad-a-6",
+        "transcript_ids": [
+            "muhammad-a-6-1"
+        ],
+        "formulas": [
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))))"
+        ]
+    },
+    {
+        "root_id": "muhammad-a-7",
+        "transcript_ids": [
+            "muhammad-a-7-1",
+            "muhammad-a-7-3",
+            "muhammad-a-7-5",
+            "muhammad-a-7-7"
+        ],
+        "formulas": [
+            "(exists c.(ad(2,3) & char(2,c)) & le(2,3))",
+            "exists h.all n.(2(n) -> (le(n,3) & (-(h = n) -> -le(n,3))))",
+            "exists h.all n.(3(n) -> (exists c.(ad(2,n) & char(2,c)) & le(2,n) & (-(h = n) -> -(exists c.(ad(2,n) & char(2,c)) & le(2,n)))))",
+            "exists h.all n.(3(n) -> (exists h.all z82853.(2(z82853) -> (le(z82853,n) & (-(h = z82853) -> -le(z82853,n)))) & (-(h = n) -> -exists h.all z82854.(2(z82854) -> (le(z82854,n) & (-(h = z82854) -> -le(z82854,n)))))))"
+        ]
+    },
+    {
+        "root_id": "muhammad-a-8",
+        "transcript_ids": [
+            "muhammad-a-8-1",
+            "muhammad-a-8-2"
+        ],
+        "formulas": [
+            "exists n.(exists c.(vowel(c) & char(n,c)) & exists h.all z82890.(exists c.(-vowel(c) & char(z82890,c)) -> (le(n,z82890) & (-(h = z82890) -> -le(n,z82890)))))",
+            "exists n.(exists c.(vowel(c) & char(n,c)) & exists z82894.(exists c.(-vowel(c) & char(z82894,c)) & le(n,z82894)))"
+        ]
+    },
+    {
+        "root_id": "muhammad-a-9",
+        "transcript_ids": [
+            "muhammad-a-9-1"
+        ],
+        "formulas": [
+            "all n.(exists c.(vowel(c) & char(n,c)) -> all c m.((char(m,c) & char(n,c)) -> (m = n)))"
+        ]
+    },
+    {
+        "root_id": "muhammad-b-1",
+        "transcript_ids": [
+            "muhammad-b-1-1"
+        ],
+        "formulas": [
+            "all n.(exists c.(vowel(c) & char(n,c)) -> exists z82898 z82899.(exists c.(glide(c) & char(z82899,c)) & le(n,z82899) & exists c.(glide(c) & char(z82898,c)) & le(n,z82898) & -(z82898 = z82899)))"
+        ]
+    },
+    {
+        "root_id": "muhammad-b-2",
+        "transcript_ids": [
+            "muhammad-b-2-1"
+        ],
+        "formulas": [
+            "all n.(exists c.(-vowel(c) & char(n,c)) -> (exists c.(char(n,c) & mirrored(n)) & exists c.(capital(c) & char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "muhammad-b-4",
+        "transcript_ids": [
+            "muhammad-b-4-1",
+            "muhammad-b-4-3"
+        ],
+        "formulas": [
+            "exists n.(exists c.(vowel(c) & char(n,c)) & exists c.char(n,c) & exists z82908.(exists c.(glide(c) & char(z82908,c)) & le(z82908,n)))",
+            "exists n.(exists c.(vowel(c) & char(n,c)) & exists c.char(n,c) & exists h.all z82914.(exists c.(glide(c) & char(z82914,c)) -> (le(z82914,n) & (-(h = z82914) -> -le(z82914,n)))))"
+        ]
+    },
+    {
+        "root_id": "muhammad-b-5",
+        "transcript_ids": [
+            "muhammad-b-5-9"
+        ],
+        "formulas": [
+            "all n.(-(capital(c5) & exists c.(vowel(c) & char(n,c)) & capital(c2)) -> -le(n,3))"
+        ]
+    },
+    {
+        "root_id": "muhammad-c-5",
+        "transcript_ids": [
+            "muhammad-c-5-543",
+            "muhammad-c-5-582"
+        ],
+        "formulas": [
+            "all n.((char(n,letk) & le(n,2)) -> (exists z88964.(exists c.(capital(c) & char(z88964,c)) & char(z88964,leti) & le(z88964,n)) & exists c.(capital(c) & char(n,c))))",
+            "all n.((char(n,letk) & le(n,2)) -> (exists z89114.(exists c.(capital(c) & char(z89114,c)) & char(z89114,leti) & le(z89114,n)) & exists c.(capital(c) & char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "olivia-a-10",
+        "transcript_ids": [
+            "olivia-a-10-32",
+            "olivia-a-10-88"
+        ],
+        "formulas": [
+            "exists m n.(exists c.char(n,c) & char(n,leta) & exists c.(capital(c) & char(n,c)) & exists c.char(m,c) & char(m,leta) & exists c.(capital(c) & char(m,c)) & -(m = n))",
+            "exists h.all n.(char(n,leti) -> (char(n,leta) & exists c.(capital(c) & char(n,c)) & (-(h = n) -> -(char(n,leta) & exists c.(capital(c) & char(n,c))))))"
+        ]
+    },
+    {
+        "root_id": "olivia-a-3",
+        "transcript_ids": [
+            "olivia-a-3-10",
+            "olivia-a-3-16"
+        ],
+        "formulas": [
+            "exists n.(exists c.(glide(c) & char(n,c)) & ad(n,5))",
+            "exists n.(exists c.(glide(c) & char(n,c)) & exists h.all z89158.(5(z89158) -> (ad(n,z89158) & (-(h = z89158) -> -ad(n,z89158)))))"
+        ]
+    },
+    {
+        "root_id": "olivia-a-7",
+        "transcript_ids": [
+            "olivia-a-7-1"
+        ],
+        "formulas": [
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "olivia-a-8",
+        "transcript_ids": [
+            "olivia-a-8-26",
+            "olivia-a-8-39"
+        ],
+        "formulas": [
+            "(le(\\n.char(n,leta),\\n.char(n,leta)) | all c m.((char(m,c) & char(\\n.exists c.(-vowel(c) & char(n,c)),c)) -> (m = \\n.exists c.(-vowel(c) & char(n,c)))))",
+            "(le(\\n.char(n,leta),\\n.char(n,leti)) | all c m.((char(m,c) & char(\\n.exists c.(-vowel(c) & char(n,c)),c)) -> (m = \\n.exists c.(-vowel(c) & char(n,c)))))"
+        ]
+    },
+    {
+        "root_id": "olivia-b-4",
+        "transcript_ids": [
+            "olivia-b-4-571",
+            "olivia-b-4-670",
+            "olivia-b-4-689"
+        ],
+        "formulas": [
+            "exists n.(-exists c d.(le(d,n) & char(n,c)) & exists c.voiced(n,c) & exists c.(-vowel(c) & char(n,c)) & exists c.(ad(5,n) & char(5,c)) & le(n,5))",
+            "-exists h.all n.((-exists c d.(le(d,n) & char(n,c)) & exists c.voiced(n,c) & exists c.(-vowel(c) & char(n,c))) -> (exists c.(ad(5,n) & char(5,c)) & le(n,5) & (-(h = n) -> -(exists c.(ad(5,n) & char(5,c)) & le(n,5)))))",
+            "exists h.all n.((-exists c d.(le(d,n) & char(n,c)) & exists c.voiced(n,c) & exists c.(-vowel(c) & char(n,c))) -> (exists c.(ad(5,n) & char(5,c)) & le(n,5) & (-(h = n) -> -(exists c.(ad(5,n) & char(5,c)) & le(n,5)))))"
+        ]
+    },
+    {
+        "root_id": "olivia-c-1",
+        "transcript_ids": [
+            "olivia-c-1-490",
+            "olivia-c-1-524",
+            "olivia-c-1-547",
+            "olivia-c-1-564",
+            "olivia-c-1-687",
+            "olivia-c-1-703",
+            "olivia-c-1-717",
+            "olivia-c-1-734",
+            "olivia-c-1-749",
+            "olivia-c-1-836",
+            "olivia-c-1-853",
+            "olivia-c-1-886",
+            "olivia-c-1-910",
+            "olivia-c-1-927",
+            "olivia-c-1-940",
+            "olivia-c-1-976"
+        ],
+        "formulas": [
+            "(exists c.(char(\\x.-char(x,lett),c) & mirrored(\\x.-char(x,lett))) & exists c.(cent(\\x.-char(x,lett)) & char(\\x.-char(x,lett),c)) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.char(n,c)) & exists n.(char(n,lett) & le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,lete)),n)))",
+            "(-exists h.all n.(char(n,lete) -> (exists c.(char(n,c) & mirrored(n)) & exists c.(cent(n) & char(n,c)) & (-(h = n) -> -(exists c.(char(n,c) & mirrored(n)) & exists c.(cent(n) & char(n,c)))))) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.char(n,c)) & exists n.(char(n,lett) & le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,lete)),n)))",
+            "(exists c.(char(\\x.-char(x,letd),c) & mirrored(\\x.-char(x,letd))) & exists c.(cent(\\x.-char(x,letd)) & char(\\x.-char(x,letd),c)) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.char(n,c)) & exists n.(char(n,lett) & le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,lete)),n)))",
+            "(exists c.(char(\\x.-char(x,letp),c) & mirrored(\\x.-char(x,letp))) & exists c.(cent(\\x.-char(x,letp)) & char(\\x.-char(x,letp),c)) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.char(n,c)) & exists n.(char(n,lett) & le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,lete)),n)))",
+            "(exists c.(char(\\x.-char(x,lett),c) & mirrored(\\x.-char(x,lett))) & exists c.(cent(\\x.-char(x,lett)) & char(\\x.-char(x,lett),c)) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.char(n,c)) & exists n.(char(n,lett) & le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,letu)),n)))",
+            "(all n.(-char(n,lett) -> -(exists c.(char(n,c) & mirrored(n)) & exists c.(cent(n) & char(n,c)))) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.char(n,c)) & exists n.(char(n,lett) & le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,lete)),n)))",
+            "(-exists h.all n.(char(n,lete) -> (exists c.(char(n,c) & mirrored(n)) & exists c.(cent(n) & char(n,c)) & (-(h = n) -> -(exists c.(char(n,c) & mirrored(n)) & exists c.(cent(n) & char(n,c)))))) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.char(n,c)) & exists n.(char(n,lett) & le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,letu)),n)))",
+            "(exists c.(char(\\x.-char(x,letd),c) & mirrored(\\x.-char(x,letd))) & exists c.(cent(\\x.-char(x,letd)) & char(\\x.-char(x,letd),c)) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.char(n,c)) & exists n.(char(n,lett) & le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,letu)),n)))",
+            "(exists c.(char(\\x.-char(x,letp),c) & mirrored(\\x.-char(x,letp))) & exists c.(cent(\\x.-char(x,letp)) & char(\\x.-char(x,letp),c)) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.char(n,c)) & exists n.(char(n,lett) & le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,letu)),n)))",
+            "(all n.(char(n,letp) -> -(exists c.(char(n,c) & mirrored(n)) & exists c.(cent(n) & char(n,c)))) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.char(n,c)) & exists n.(char(n,lett) & le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,lete)),n)))",
+            "(all n.(-char(n,lett) -> -(exists c.(char(n,c) & mirrored(n)) & exists c.(cent(n) & char(n,c)))) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.char(n,c)) & exists n.(char(n,lett) & le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,letu)),n)))",
+            "(exists c.(char(\\x.-char(x,lett),c) & mirrored(\\x.-char(x,lett))) & exists c.(cent(\\x.-char(x,lett)) & char(\\x.-char(x,lett),c)) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.char(n,c)) & exists h.all n.(char(n,lett) -> (le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,lete)),n) & (-(h = n) -> -le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,lete)),n)))))",
+            "(-exists h.all n.(char(n,lete) -> (exists c.(char(n,c) & mirrored(n)) & exists c.(cent(n) & char(n,c)) & (-(h = n) -> -(exists c.(char(n,c) & mirrored(n)) & exists c.(cent(n) & char(n,c)))))) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.char(n,c)) & exists h.all n.(char(n,lett) -> (le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,lete)),n) & (-(h = n) -> -le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,lete)),n)))))",
+            "(exists c.(char(\\x.-char(x,letd),c) & mirrored(\\x.-char(x,letd))) & exists c.(cent(\\x.-char(x,letd)) & char(\\x.-char(x,letd),c)) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.char(n,c)) & exists h.all n.(char(n,lett) -> (le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,lete)),n) & (-(h = n) -> -le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,lete)),n)))))",
+            "(exists c.(char(\\x.-char(x,letp),c) & mirrored(\\x.-char(x,letp))) & exists c.(cent(\\x.-char(x,letp)) & char(\\x.-char(x,letp),c)) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.char(n,c)) & exists h.all n.(char(n,lett) -> (le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,lete)),n) & (-(h = n) -> -le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,lete)),n)))))",
+            "(all n.(char(n,letp) -> -(exists c.(char(n,c) & mirrored(n)) & exists c.(cent(n) & char(n,c)))) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.char(n,c)) & exists n.(char(n,lett) & le(\\x.(all c m.((char(m,c) & char(x,c)) -> (m = x)) & char(x,letu)),n)))"
+        ]
+    },
+    {
+        "root_id": "olivia-c-3",
+        "transcript_ids": [
+            "olivia-c-3-231",
+            "olivia-c-3-378"
+        ],
+        "formulas": [
+            "exists h.all n.(char(n,leti) -> (exists c.(-vowel(c) & char(n,c)) & exists z92943 z92944.(exists c.char(z92944,c) & char(z92944,lete) & le(z92944,n) & exists c.char(z92943,c) & char(z92943,lete) & le(z92943,n) & -(z92943 = z92944)) & (-(h = n) -> -(exists c.(-vowel(c) & char(n,c)) & exists z92943 z92944.(exists c.char(z92944,c) & char(z92944,lete) & le(z92944,n) & exists c.char(z92943,c) & char(z92943,lete) & le(z92943,n) & -(z92943 = z92944))))))",
+            "exists h.all n.(char(n,leti) -> (exists c.(-vowel(c) & char(n,c)) & exists z93477 z93482.(exists c.char(z93482,c) & le(z93482,n) & exists c.char(z93477,c) & le(z93477,n) & -(z93477 = z93482)) & char(n,lete) & (-(h = n) -> -(exists c.(-vowel(c) & char(n,c)) & exists z93477 z93482.(exists c.char(z93482,c) & le(z93482,n) & exists c.char(z93477,c) & le(z93477,n) & -(z93477 = z93482)) & char(n,lete)))))"
+        ]
+    },
+    {
+        "root_id": "zoe-a-1",
+        "transcript_ids": [
+            "zoe-a-1-3"
+        ],
+        "formulas": [
+            "exists m n.(exists c.(capital(c) & char(n,c)) & exists c.(vowel(c) & char(n,c)) & exists c.char(n,c) & exists c.(capital(c) & char(m,c)) & exists c.(vowel(c) & char(m,c)) & exists c.char(m,c) & -(m = n))"
+        ]
+    },
+    {
+        "root_id": "zoe-a-10",
+        "transcript_ids": [
+            "zoe-a-10-1"
+        ],
+        "formulas": [
+            "all n.((exists c.(capital(c) & char(n,c)) & exists c.char(n,c)) -> -exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "zoe-a-2",
+        "transcript_ids": [
+            "zoe-a-2-1",
+            "zoe-a-2-4"
+        ],
+        "formulas": [
+            "exists n.(exists c.(-vowel(c) & char(n,c)) & all z97050.(exists c.(vowel(c) & char(z97050,c)) -> le(n,z97050)))",
+            "exists h.all n.(exists c.(-vowel(c) & char(n,c)) -> (all z97063.(exists c.(vowel(c) & char(z97063,c)) -> le(n,z97063)) & (-(h = n) -> -all z97064.(exists c.(vowel(c) & char(z97064,c)) -> le(n,z97064)))))"
+        ]
+    },
+    {
+        "root_id": "zoe-a-4",
+        "transcript_ids": [
+            "zoe-a-4-1"
+        ],
+        "formulas": [
+            "all n.((exists c.(capital(c) & char(n,c)) & exists c.(vowel(c) & char(n,c))) -> -exists c d.(le(n,d) & char(n,c)))"
+        ]
+    },
+    {
+        "root_id": "zoe-a-5",
+        "transcript_ids": [
+            "zoe-a-5-4"
+        ],
+        "formulas": [
+            "exists n.(exists c.(glide(c) & char(n,c)) & exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))))"
+        ]
+    },
+    {
+        "root_id": "zoe-a-6",
+        "transcript_ids": [
+            "zoe-a-6-2"
+        ],
+        "formulas": [
+            "exists c.(exists z97087.voiced(c,z97087) & exists z97088.(-vowel(z97088) & char(c,z97088)))"
+        ]
+    },
+    {
+        "root_id": "zoe-a-7",
+        "transcript_ids": [
+            "zoe-a-7-1"
+        ],
+        "formulas": [
+            "(all n.(exists c.(vowel(c) & char(n,c)) -> exists c.(capital(c) & char(n,c))) & all n.(exists c.(-vowel(c) & char(n,c)) -> -exists c.(capital(c) & char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "zoe-a-8",
+        "transcript_ids": [
+            "zoe-a-8-1"
+        ],
+        "formulas": [
+            "all n.(-exists c.(glide(c) & char(n,c)) -> -exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m))))"
+        ]
+    },
+    {
+        "root_id": "zoe-a-9",
+        "transcript_ids": [
+            "zoe-a-9-1"
+        ],
+        "formulas": [
+            "exists n.(exists c.(vowel(c) & char(n,c)) & all z97096.(exists c.(-vowel(c) & char(z97096,c)) -> ad(n,z97096)))"
+        ]
+    },
+    {
+        "root_id": "zoe-b-1",
+        "transcript_ids": [
+            "zoe-b-1-82"
+        ],
+        "formulas": [
+            "all n.((exists c.(-vowel(c) & char(n,c)) & exists c.char(n,c)) -> (char(n,lett) | exists m c.(char(n,c) & char(m,c) & (le(m,n) | le(n,m)))))"
+        ]
+    },
+    {
+        "root_id": "zoe-b-2",
+        "transcript_ids": [
+            "zoe-b-2-1"
+        ],
+        "formulas": [
+            "all n.((exists c.(char(n,c) & even(n)) & exists c.(-vowel(c) & char(n,c)) & capital(c2) & exists c.char(n,c)) -> all c m.((char(m,c) & char(n,c)) -> (m = n)))"
+        ]
+    },
+    {
+        "root_id": "zoe-b-3",
+        "transcript_ids": [
+            "zoe-b-3-8",
+            "zoe-b-3-18",
+            "zoe-b-3-31",
+            "zoe-b-3-41"
+        ],
+        "formulas": [
+            "all n.(exists c.char(n,c) -> -(exists c.(-vowel(c) & char(n,c)) & char(n,leta) & exists z97195.(char(z97195,letk) & le(z97195,n))))",
+            "all n.(exists c.char(n,c) -> -(exists c.(-vowel(c) & char(n,c)) & exists z97213.(char(z97213,letk) & le(z97213,n))))",
+            "all n.(exists c.char(n,c) -> -(exists c.(-vowel(c) & char(n,c)) & char(n,leta) & exists h.all z97237.(char(z97237,letk) -> (le(z97237,n) & (-(h = z97237) -> -le(z97237,n))))))",
+            "all n.(exists c.char(n,c) -> -(exists c.(-vowel(c) & char(n,c)) & exists h.all z97261.(char(z97261,letk) -> (le(z97261,n) & (-(h = z97261) -> -le(z97261,n))))))"
+        ]
+    },
+    {
+        "root_id": "zoe-c-1",
+        "transcript_ids": [
+            "zoe-c-1-13"
+        ],
+        "formulas": [
+            "((-exists n.(exists c.char(n,c) & exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)) & all c m.((char(m,c) & char(n,c)) -> (m = n))) & all n.((exists c.char(n,c) & all c m.((char(m,c) & char(n,c)) -> (m = n))) -> -exists c.char(n,c))) | (exists n.(exists c.char(n,c) & exists c.char(n,c) & exists d.(adj(n,d) & le(n,d) & -exists m.le(d,m)) & all c m.((char(m,c) & char(n,c)) -> (m = n))) & -all n.((exists c.char(n,c) & all c m.((char(m,c) & char(n,c)) -> (m = n))) -> -exists c.char(n,c))))"
+        ]
+    },
+    {
+        "root_id": "zoe-c-2",
+        "transcript_ids": [
+            "zoe-c-2-69"
+        ],
+        "formulas": [
+            "all n.((exists c.(char(n,c) & even(n)) & exists c.(glide(c) & char(n,c)) & (capital(c3) | exists z98526 z98523.(char(z98523,lett) & le(n,z98523) & char(z98526,lett) & le(n,z98526) & -(z98526 = z98523)) | exists z98524.(char(z98524,lete) & le(n,z98524)))) -> -exists c.char(n,c))"
+        ]
+    },
+    {
+        "root_id": "zoe-c-3",
+        "transcript_ids": [
+            "zoe-c-3-3",
+            "zoe-c-3-15"
+        ],
+        "formulas": [
+            "all n.((exists c.char(n,c) & exists z98892 z98899.(char(z98899,lete) & le(z98899,n) & char(z98892,lete) & le(z98892,n) & -(z98892 = z98899)) & exists c.(capital(c) & char(n,c))) -> exists c.(char(n,c) & odd(n)))",
+            "all n.((exists c.char(n,c) & exists z98948 z98955.(char(z98955,lete) & le(z98955,n) & char(z98948,lete) & le(z98948,n) & -(z98948 = z98955)) & exists c.(capital(c) & char(n,c))) -> char(n,leti))"
+        ]
+    }
+]
