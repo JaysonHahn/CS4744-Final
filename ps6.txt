@@ -1,0 +1,103 @@
+Problem Set 6
+Computational Linguistics
+Spring 2025
+
+In this problem set, you will create and evaluate a draft of the end-to-end speech
+to truth value system. Work in your teams for the project component.
+Each team member should submit an ipynb and pdf of it. It can be substantively
+the same as what is submitted by the other team members. List your team members at the
+top of the submission.
+
+Teams that need a CFG derived from and FCFG are asked to in addition code functionality
+for mapping and FCFG to an equivalent CFG, dropping the semantics.
+
+Draft project
+=============
+
+Use the same materials (grammar, nbest, correct transcriptions, truth values) as in PS4 and PS5.
+
+1. Compute a dictionary which maps a given ID (such as 'evelyn-a-10') to the list of
+transcript IDs that have a parse according to the grammar (e.g. ['evelyn-a-10-4','evelyn-a-10-16','evelyn-a-10-60',...]).
+Save the list to an external file.  Optionally also save the tree analyses and/or formulas.
+
+The point of this is that parsing all the transcripts is likely to take hours, so you don't want to
+redo it repeatedly.
+
+State the proportion of IDs for which a parsable transcript is found.
+
+2. Implent this strategy.
+
+A. For each ID (e.g. 'evelyn-a-10') look up the minimal corresponding transcript ID that can be parsed (in the above,
+'evelyn-a-10-4'). Find the corresponding logical formula, either by looking it up from your saved information, or reparsing.
+
+Skip items that have no transcript with a parse.
+
+
+
+B. Retrieve the truth value judgments for the ID, e.g. "evelyn-a-10 it f mAtterS f nOT f they f are f all f FAlse f ava f" and
+split them into a suitable data structure. For each string, build a model and evaluation, as in PS2. Evaluate the logical
+formula to derive a truth value. Store the results in a data structure.
+
+C. Compute these ratios.
+
+-- Proportion of truth value predictions that are correct
+-- Proportion of IDs where all or almost all of the truth value predictions are correct. Pick an informative notion of
+almost all, such as 80%.
+-- Some other statistic that you find interesting.
+
+Discuss the results in a paragraph. Bring up issues including the cause for the truth values being not mostly correct. 
+
+Mapping a FCFG to a CFG
+=======================
+If you are in one of the three groups where having access to a CFG (or PCFG) is useful, implement a function for mapping
+an FCFG to an equivalent CFG, discarding the semantics.
+
+Here is one approach.
+
+For each grammar symbol, find the list of feature names (such as NUM) that are used for that symbol anywhere in the
+grammar. Exclude SEM. For instance, DP uses the features ['NUM','PRED','STR']. NEG uses the features [], it has no features.
+Put the feature names for a grammar symbol in alphabetical order.
+
+For each feature name, find the list of feature values which that feature can take. For instance in our grammar, 'NUM' takes
+the values ['sg','pl'] and 'PRED' takes the values ['yes','no'].
+
+The above are computable by reading the grammar into NLTK, and iterating through the productions. Store the results.
+
+Create a CFG by multiplying out possibilities for each production. Incorporate the feature values into the grammar
+symbols.
+
+The production
+DP[NUM=?b, STR=?s, PRED=?d, SEM=<?X(?P)>] -> Det[STR=?s, NUM=?b, PRED=?d, SEM=?X] NP[NUM=?b, SEM=?P]
+
+should generate something like the productions below. (This hasn't been checked carefully.)
+The 'yes' in 'NP-sg-yes' comes from NP having an unconstrained
+STR feature.
+
+DP-sg-yes-yes -> Det-sg-yes-yes NP-sg-yes
+DP-sg-yes-no -> Det-sg-yes-no NP-sg-yes
+DP-sg-no-yes -> Det-sg-no-yes NP-sg-yes
+DP-sg-no-no -> Det-sg-no-no NP-sg-yes
+
+DP-sg-yes-yes -> Det-sg-yes-yes NP-sg-no
+DP-sg-yes-no -> Det-sg-yes-no NP-sg-no
+DP-sg-no-yes -> Det-sg-no-yes NP-sg-no
+DP-sg-no-no -> Det-sg-no-no NP-sg-no
+
+DP-pl-yes-yes -> Det-pl-yes-yes NP-pl-yes
+DP-pl-yes-no -> Det-pl-yes-no NP-pl-yes
+DP-pl-no-yes -> Det-pl-no-yes NP-pl-yes
+DP-pl-no-no -> Det-pl-no-no NP-pl-yes
+
+DP-pl-yes-yes -> Det-pl-yes-yes NP-pl-no
+DP-pl-yes-no -> Det-pl-yes-no NP-pl-no
+DP-pl-no-yes -> Det-pl-no-yes NP-pl-no
+DP-pl-no-no -> Det-pl-no-no NP-pl-no
+
+Compute and submit ps6_grammar.cfg.  Put your code for producing the cfg into a python program fcfg-to-cfg that is callable from the
+command line.
+
+
+
+
+
+
