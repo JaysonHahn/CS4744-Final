@@ -2,7 +2,7 @@ import nltk
 import sys
 import re
 
-def fcfg_to_cfg(fcfg_file, cfg_file):
+def fcfg_to_cfg(fcfg_file, cfg_file, pcfg_file=None):
     """
     Convert a Finite Context-Free Grammar (FCFG) to a Context-Free Grammar (CFG).
     
@@ -29,10 +29,10 @@ def fcfg_to_cfg(fcfg_file, cfg_file):
         production = Production(line.strip())
         productions.append(production)
  
-    print("Parsed productions:")
-    for production in productions:
-        # print(f"{production.lhs} -> {' '.join(production.rhs)}")
-        print(f"symbol: {production.signature_node} features: {production.signature_node.features}, ")
+    # print("Parsed productions:")
+    # for production in productions:
+    #     # print(f"{production.lhs} -> {' '.join(production.rhs)}")
+    #     print(f"symbol: {production.signature_node} features: {production.signature_node.features}, ")
                 
     # Create a mapping structure for signature symbol, feature set index, and key to their possible values
     # This allows handling multiple feature dictionaries from slash notation
@@ -54,41 +54,6 @@ def fcfg_to_cfg(fcfg_file, cfg_file):
     print("Initial sign_and_feature_to_values mapping:")
     for (node, index, key), values in sign_and_feature_to_values.items():
         print(f"Node: {node}, Index: {index}, Key: {key}, Values: {values}")
-
-    # # Fill the final mapping with all possible values for each feature
-    # changed = True
-    # while changed:
-    #     changed = False
-    #     for production in productions:
-    #         for key, value in production.features.items():
-    #             if value.startswith('?'):
-    #                 node_list_with_value = list(map(lambda x: value in x.values, production.right_nodes))
-    #                 nodes = [node for node, has_value in zip(production.right_nodes, node_list_with_value) if has_value]
-                    
-    #                 if not nodes:
-    #                     continue
-                      
-    #                 sign_to_keys_and_values = []
-    #                 for node in nodes:
-    #                     for k, v in node.features:
-    #                         if v == value:
-    #                             sign_to_keys_and_values.append((node, k, v))
-                    
-    #                 mapped_possible_values = list(map(lambda x: sign_and_feature_to_values.get((x[0], x[1]), set()), sign_to_keys_and_values))
-    #                 # Intersect the possible values for this feature across all nodes
-    #                 if not mapped_possible_values:
-    #                     continue
-    #                 if any(len(values) == 0 for values in mapped_possible_values): 
-    #                     continue
-    #                 possible_values = set.intersection(*mapped_possible_values)
-    #                 if not possible_values or len(possible_values) == 0:
-    #                     continue
-                      
-    #                 if sign_and_feature_to_values.get((production.signature_node, key)) == possible_values:
-    #                     continue
-                      
-    #                 sign_and_feature_to_values[(production.signature_node, key)] = possible_values
-    #                 changed = True
                     
     # Fill the final mapping with all possible values for each feature
     changed = True
@@ -222,7 +187,34 @@ def fcfg_to_cfg(fcfg_file, cfg_file):
             f.write(f"% start {start_symbol}\n")
         for cfg_production in cfg_productions:
             f.write(cfg_production + "\n")
-              
+       
+    lhs_dict = {}     
+    for cfg_production in cfg_productions:
+        ## split by the one arrow into lhs and rhs
+        lhs, rhs = cfg_production.split("->")
+        lhs = lhs.strip()
+        if lhs not in lhs_dict:
+            lhs_dict[lhs] = 0
+        lhs_dict[lhs] += 1
+        
+    # convert to pcfg with equal probabilities
+    pcfg_productions = []
+    for cfg_production in cfg_productions:
+        lhs, rhs = cfg_production.split("->")
+        lhs = lhs.strip()
+        pcfg_productions.append(f"{lhs} -> {rhs.strip()} [{1/lhs_dict[lhs]}]")
+    
+    # print("PCFG Productions:")
+    # for pcfg_production in pcfg_productions:
+    #     print(pcfg_production)
+        
+    if pcfg_file:
+        with open(pcfg_file, 'w') as f:
+            if start_symbol:
+                f.write(f"% start {start_symbol}\n")
+            for pcfg_production in pcfg_productions:
+                f.write(pcfg_production + "\n")
+            
 def convert_productions_with_features(convertible_productions, sign_and_feature_to_values):
     cfg_productions = []
     
@@ -360,11 +352,11 @@ def generate_node_string(node, feature_values):
 
 class Production:
     def __init__(self, line):
-        self.lhs, self.rhs = self._parse_production(line)
+        self.lhs, self.rhs = self.parse_production(line)
         self.signature_node = Node(self.lhs)
         self.right_nodes = [Node(signature) for signature in self.rhs]
       
-    def _parse_production(self, line: str) -> tuple:
+    def parse_production(self, line: str) -> tuple:
         """
         Parse a single production line from the FCFG.
         Parameters:
@@ -372,24 +364,36 @@ class Production:
         Returns:
         tuple: A tuple containing the left-hand side and right-hand side of the production.
         """
-        
-        # Check if the line contains a production rule
-        if "->" not in line:
+        # Check if the line is empty or a comment
+        if not line or line.strip().startswith('#'):
             return None, None
+            
+        # Parse considering brackets to find the actual production arrow
+        bracket_count = 0
+        split_pos = -1
         
-        # Split into left-hand side and right-hand side
-        lhs, rhs = line.split("->", 1)  # Split only on the first occurrence
-        lhs = lhs.strip()
+        for i in range(len(line) - 1):
+            if line[i:i+2] == "->" and bracket_count == 0:
+                split_pos = i
+                break
+            elif line[i] == '[':
+                bracket_count += 1
+            elif line[i] == ']':
+                bracket_count -= 1
         
-        # Process the right-hand side
-        rhs = rhs.strip()
+        # If no production arrow found outside brackets
+        if split_pos == -1:
+            return None, None
+            
+        # Split the line at the correct position
+        lhs = line[:split_pos].strip()
+        rhs = line[split_pos+2:].strip()  # +2 to skip the "->"
         
         # Handle empty right-hand side
         if not rhs:
             return lhs, []
         
         # Parse the right-hand side considering complex productions
-        # We'll need to tokenize based on production symbols, not just whitespace
         productions = []
         current_token = ""
         in_feature = False
@@ -474,9 +478,33 @@ class Node:
         bracket_match = re.search(r'\[(.*?)\]', part.strip())
         if bracket_match:
             features_str = bracket_match.group(1)
-            # Split the features by commas and process each one
-            for feature in features_str.split(','):
-                key_value = feature.strip().split('=')
+            
+            # Use a more sophisticated approach to split by commas outside angle brackets
+            feature_parts = []
+            current_part = ""
+            angle_bracket_level = 0
+            
+            for char in features_str:
+                if char == '<':
+                    angle_bracket_level += 1
+                    current_part += char
+                elif char == '>':
+                    angle_bracket_level -= 1
+                    current_part += char
+                elif char == ',' and angle_bracket_level == 0:
+                    # Only split on commas outside angle brackets
+                    feature_parts.append(current_part.strip())
+                    current_part = ""
+                else:
+                    current_part += char
+                    
+            # Add the last part if it exists
+            if current_part.strip():
+                feature_parts.append(current_part.strip())
+            
+            # Process each feature part
+            for feature in feature_parts:
+                key_value = feature.strip().split('=', 1)  # Split on first '=' only
                 if len(key_value) == 2:
                     key = key_value[0].strip()
                     value = key_value[1].strip()
@@ -484,13 +512,13 @@ class Node:
                     # Skip semantic features if needed
                     if key.lower() == "sem":
                         continue
-                    
+                        
                     # Value can be wrapped in <> or not, so we need to handle that
                     if value.startswith('<') and value.endswith('>'):
                         value = value[1:-1].strip()
-                    
+                        
                     features[key] = value
-        
+                    
         return features
       
     def __eq__(self, value):
@@ -543,4 +571,4 @@ class Node:
 
 if __name__ == "__main__":
   # Check if the correct number of arguments is provided
-  fcfg_to_cfg("ps6_grammar.fcfg", "cfg_grammer.cfg")
+  fcfg_to_cfg("ps6_grammar.fcfg", "cfg_grammer.cfg", "pcfg_grammer.pcfg")
