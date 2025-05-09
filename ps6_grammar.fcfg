@@ -112,7 +112,6 @@ NP/NP ->
 Det[STR=yes, NUM=sg, SEM=<\P Q.all n.(P(n) -> Q(n))>] -> 'every'
 Det[STR=yes, NUM=pl, SEM=<\P Q.all n.(P(n) -> Q(n))>] -> 'all'
 Det[STR=no, SEM=<\P Q.exists n.(P(n) & Q(n))>] -> 'some'
-Det[STR=no, SEM=<\P Q.exists n.(P(n) & Q(n))>] -> 'any'
 Det[STR=no, SEM=<\P Q.all n.(-P(n) -> -Q(n))>] -> 'only'
 Det[STR=no, NUM=sg, SEM=<\P Q.exists n.(P(n)&Q(n))>] -> 'at' 'least' 'one'
 Det[STR=no, SEM=<\P Q.all n.(P(n) -> not Q(n))>] -> 'no'
